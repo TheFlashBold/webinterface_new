@@ -2,7 +2,7 @@ const spawn = require('child_process').spawn;
 const io = global.io;
 const path = require('path');
 const serverUtility = require('./serverUtility');
-const fs = require('fs');
+const fs = require('fs-extra');
 
 module.exports = class Game {
 
@@ -21,7 +21,7 @@ module.exports = class Game {
     }
 
     async remove(){
-
+        fs.removeSync(path.resolve(global.config.server.path, this.serverID));
     }
 
     async onUpdate(progress){
