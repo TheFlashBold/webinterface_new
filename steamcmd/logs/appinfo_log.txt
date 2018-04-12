@@ -1,0 +1,113 @@
+
+
+[2018-04-11 20:04:08] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:04:09] ProductInfoChanges: change number 0->4297781, apps: 0/0, packages: 0/0
+[2018-04-11 20:04:09] UpdatesJob: requesting 1 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:04:09] UpdatesJob: requesting 1 apps, 1 packages (full data, 1024 prev attempts)
+[2018-04-11 20:04:10] UpdatesJob: finished OK, nAppsUpdated 1 (2 KB), nPackagesUpdated 1 (31 KB)
+[2018-04-11 20:04:10] UpdatesJob: requesting 789 apps, 0 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:04:10] UpdatesJob: requested 387 access tokens, 39 received, 348 denied
+[2018-04-11 20:04:11] UpdatesJob: updated SHAs with 39 new access tokens
+[2018-04-11 20:04:11] UpdatesJob: downloaded 19 apps via HTTP, 393 KB (103 KB compressed)
+[2018-04-11 20:04:11] UpdatesJob: requesting 770 apps, 0 packages (full data, 1024 prev attempts)
+[2018-04-11 20:04:13] UpdatesJob: finished OK, nAppsUpdated 789 (1463 KB), nPackagesUpdated 0 (0 KB)
+[2018-04-11 20:04:13] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:04:13] UpdatesJob: requesting 1 apps, 0 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:04:14] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+[2018-04-11 20:04:28] Starting async write E:\Desktop\webinterface_neu\steamcmd/appcache/appinfo.vdf (1088103 bytes)
+
+
+[2018-04-11 20:11:20] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:11:20] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:11:20] ProductInfoChanges: change number 0->4297798, apps: 0/0, packages: 0/0
+[2018-04-11 20:11:20] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:11:21] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:11:21] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:11:39] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:11:40] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:11:40] ProductInfoChanges: change number 0->4297799, apps: 0/0, packages: 0/0
+[2018-04-11 20:11:40] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:11:41] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:11:41] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:32:44] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:32:44] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:32:45] ProductInfoChanges: change number 0->4297913, apps: 0/0, packages: 0/0
+[2018-04-11 20:32:45] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:32:45] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:32:46] UpdatesJob: downloaded 1 apps via HTTP, 9 KB (3 KB compressed)
+[2018-04-11 20:32:46] UpdatesJob: requesting 1 apps, 0 packages (full data, 1024 prev attempts)
+[2018-04-11 20:32:46] UpdatesJob: finished OK, nAppsUpdated 2 (12 KB), nPackagesUpdated 0 (0 KB)
+[2018-04-11 20:32:46] Starting async write E:\Desktop\webinterface_neu\steamcmd/appcache/appinfo.vdf (1088102 bytes)
+
+
+[2018-04-11 20:34:13] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:34:13] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:34:14] ProductInfoChanges: change number 0->4297919, apps: 0/0, packages: 0/0
+[2018-04-11 20:34:14] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:34:14] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:34:14] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:34:36] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:34:36] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:34:37] ProductInfoChanges: change number 0->4297920, apps: 0/0, packages: 0/0
+[2018-04-11 20:34:37] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:34:37] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:34:37] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:37:40] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:37:41] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:37:41] ProductInfoChanges: change number 0->4297932, apps: 0/0, packages: 0/0
+[2018-04-11 20:37:41] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:37:42] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:37:42] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:38:28] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:38:28] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:38:28] ProductInfoChanges: change number 0->4297934, apps: 0/0, packages: 0/0
+[2018-04-11 20:38:29] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:38:29] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:38:29] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:39:59] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:39:59] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:39:59] ProductInfoChanges: change number 0->4297941, apps: 0/0, packages: 0/0
+[2018-04-11 20:39:59] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:40:00] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:40:00] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-11 20:42:26] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:42:26] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-11 20:42:26] ProductInfoChanges: change number 0->4297951, apps: 0/0, packages: 0/0
+[2018-04-11 20:42:26] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-11 20:42:27] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-11 20:42:27] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+
+
+[2018-04-12 17:06:21] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-12 17:06:21] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-12 17:06:22] ProductInfoChanges: change number 0->4301859, apps: 0/0, packages: 0/0
+[2018-04-12 17:06:22] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-12 17:06:22] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-12 17:06:23] UpdatesJob: downloaded 8 apps via HTTP, 192 KB (47 KB compressed)
+[2018-04-12 17:06:23] UpdatesJob: requesting 43 apps, 0 packages (full data, 1024 prev attempts)
+[2018-04-12 17:06:23] UpdatesJob: finished OK, nAppsUpdated 51 (355 KB), nPackagesUpdated 0 (0 KB)
+[2018-04-12 17:06:23] Starting async write E:\Desktop\webinterface_neu\steamcmd/appcache/appinfo.vdf (1085033 bytes)
+
+
+[2018-04-12 17:07:40] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-12 17:07:41] RequestAppInfoUpdate: nNumAppIDs 1
+[2018-04-12 17:07:41] ProductInfoChanges: change number 0->4301866, apps: 0/0, packages: 0/0
+[2018-04-12 17:07:41] UpdatesJob: requesting 790 apps, 1 packages (meta data, 1024 prev attempts)
+[2018-04-12 17:07:42] UpdatesJob: requested 348 access tokens, 0 received, 348 denied
+[2018-04-12 17:07:42] UpdatesJob: requesting 3 apps, 0 packages (full data, 1024 prev attempts)
+[2018-04-12 17:07:42] UpdatesJob: finished OK, nAppsUpdated 3 (13 KB), nPackagesUpdated 0 (0 KB)
+[2018-04-12 17:07:42] Starting async write E:\Desktop\webinterface_neu\steamcmd/appcache/appinfo.vdf (1085033 bytes)

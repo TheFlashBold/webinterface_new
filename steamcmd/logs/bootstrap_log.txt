@@ -1,0 +1,689 @@
+
+
+[2018-04-11 20:03:57] Startup - updater built Dec  2 2013 18:43:44
+[2018-04-11 20:03:57] Checking for update on startup
+[2018-04-11 20:03:57] Checking for available update...
+[2018-04-11 20:03:57] Download failed: http error 0
+[2018-04-11 20:03:57] Package file steamcmd_public_all.zip.606b15b49dcbcfa43421eb3c1a874b838edc2e1b missing or incorrect size
+[2018-04-11 20:03:57] Package file steamcmd_bins_win32.zip.4c7f1dd9f3c15ba9be14c78bec4ed1da2a1ecfcb missing or incorrect size
+[2018-04-11 20:03:57] Package file steamcmd_steamservice_win32.zip.cf9fac5b4b3a07a55d6089760bab79d64c240905 missing or incorrect size
+[2018-04-11 20:03:57] Package file steamcmd_steamerrorreporter_win32.zip.0acdd2e63310a31775130c7e59e951da278b29c0 missing or incorrect size
+[2018-04-11 20:03:57] Package file steamcmd_win32.zip.a9b2bef4d70a096fb2ac9168e283695ade2f7b21 missing or incorrect size
+[2018-04-11 20:03:57] Downloading update (0 of 10,245 KB)...
+[2018-04-11 20:03:58] Error: Download of package (steamcmd_win32) failed after 0 bytes (0).
+[2018-04-11 20:03:58] Error: Download of package (steamcmd_steamerrorreporter_win32) failed after 0 bytes (0).
+[2018-04-11 20:03:58] Error: Download of package (steamcmd_steamservice_win32) failed after 0 bytes (0).
+[2018-04-11 20:03:58] Error: Download of package (steamcmd_bins_win32) failed after 0 bytes (0).
+[2018-04-11 20:03:58] Error: Download of package (steamcmd_public_all) failed after 0 bytes (0).
+[2018-04-11 20:03:58] Package file steamcmd_public_all.zip.606b15b49dcbcfa43421eb3c1a874b838edc2e1b missing or incorrect size
+[2018-04-11 20:03:58] Package file steamcmd_bins_win32.zip.4c7f1dd9f3c15ba9be14c78bec4ed1da2a1ecfcb missing or incorrect size
+[2018-04-11 20:03:58] Package file steamcmd_steamservice_win32.zip.cf9fac5b4b3a07a55d6089760bab79d64c240905 missing or incorrect size
+[2018-04-11 20:03:58] Package file steamcmd_steamerrorreporter_win32.zip.0acdd2e63310a31775130c7e59e951da278b29c0 missing or incorrect size
+[2018-04-11 20:03:58] Package file steamcmd_win32.zip.a9b2bef4d70a096fb2ac9168e283695ade2f7b21 missing or incorrect size
+[2018-04-11 20:03:58] Downloading update (65 of 10,245 KB)...
+[2018-04-11 20:03:58] Downloading update (565 of 10,245 KB)...
+[2018-04-11 20:03:58] Downloading update (1,148 of 10,245 KB)...
+[2018-04-11 20:03:59] Downloading update (2,447 of 10,245 KB)...
+[2018-04-11 20:03:59] Downloading update (3,918 of 10,245 KB)...
+[2018-04-11 20:03:59] Downloading update (5,396 of 10,245 KB)...
+[2018-04-11 20:03:59] Downloading update (6,880 of 10,245 KB)...
+[2018-04-11 20:04:00] Downloading update (8,497 of 10,245 KB)...
+[2018-04-11 20:04:00] Downloading update (9,956 of 10,245 KB)...
+[2018-04-11 20:04:00] Downloading update (10,245 of 10,245 KB)...
+[2018-04-11 20:04:00] Download Complete.
+[2018-04-11 20:04:00] uninstalled manifest found in E:\Desktop\webinterface_neu\steamcmd\package\steam_cmd_win32 (1).
+[2018-04-11 20:04:00] Found pending update
+[2018-04-11 20:04:00] Applying update...
+[2018-04-11 20:04:00] Extracting package...
+[2018-04-11 20:04:01] Installing update...
+[2018-04-11 20:04:01] Committing NTFS transaction (0 non-transactional backup files)
+[2018-04-11 20:04:01] Cleaning up...
+[2018-04-11 20:04:01] Update complete, launching...
+[2018-04-11 20:04:01] Shutdown
+
+
+[2018-04-11 20:04:06] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:04:06] Checking for update on startup
+[2018-04-11 20:04:06] Suche nach verfügbaren Updates...
+[2018-04-11 20:04:06] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:04:06] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:04:06] Nothing to do
+[2018-04-11 20:04:06] Installation wird überprüft...
+[2018-04-11 20:04:06] Performing checksum verification of executable files
+[2018-04-11 20:04:06] Verification complete
+[2018-04-11 20:10:42] Shutdown
+
+
+[2018-04-11 20:11:01] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:11:01] Checking for update on startup
+[2018-04-11 20:11:01] Suche nach verfügbaren Updates...
+[2018-04-11 20:11:01] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:11:01] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:11:01] Nothing to do
+[2018-04-11 20:11:01] Installation wird überprüft...
+[2018-04-11 20:11:01] Performing checksum verification of executable files
+[2018-04-11 20:11:01] Verification complete
+[2018-04-11 20:11:02] Shutdown
+
+
+[2018-04-11 20:11:02] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:11:02] Checking for update on startup
+[2018-04-11 20:11:02] Suche nach verfügbaren Updates...
+[2018-04-11 20:11:02] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:11:02] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:11:02] Nothing to do
+[2018-04-11 20:11:02] Installation wird überprüft...
+[2018-04-11 20:11:02] Performing checksum verification of executable files
+[2018-04-11 20:11:02] Verification complete
+[2018-04-11 20:11:21] Shutdown
+
+
+[2018-04-11 20:11:36] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:11:36] Checking for update on startup
+[2018-04-11 20:11:36] Suche nach verfügbaren Updates...
+[2018-04-11 20:11:36] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:11:37] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:11:37] Nothing to do
+[2018-04-11 20:11:37] Installation wird überprüft...
+[2018-04-11 20:11:37] Performing checksum verification of executable files
+[2018-04-11 20:11:37] Verification complete
+[2018-04-11 20:11:37] Shutdown
+
+
+[2018-04-11 20:11:37] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:11:37] Checking for update on startup
+[2018-04-11 20:11:37] Suche nach verfügbaren Updates...
+[2018-04-11 20:11:38] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:11:38] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:11:38] Nothing to do
+[2018-04-11 20:11:38] Installation wird überprüft...
+[2018-04-11 20:11:38] Performing checksum verification of executable files
+[2018-04-11 20:11:38] Verification complete
+[2018-04-11 20:11:41] Shutdown
+
+
+[2018-04-11 20:12:39] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:12:39] Checking for update on startup
+[2018-04-11 20:12:39] Suche nach verfügbaren Updates...
+[2018-04-11 20:12:39] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:12:39] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:12:39] Nothing to do
+[2018-04-11 20:12:39] Installation wird überprüft...
+[2018-04-11 20:12:39] Performing checksum verification of executable files
+[2018-04-11 20:12:40] Verification complete
+[2018-04-11 20:12:40] Shutdown
+
+
+[2018-04-11 20:13:02] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:13:02] Checking for update on startup
+[2018-04-11 20:13:02] Suche nach verfügbaren Updates...
+[2018-04-11 20:13:03] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:13:03] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:13:03] Nothing to do
+[2018-04-11 20:13:03] Installation wird überprüft...
+[2018-04-11 20:13:03] Performing checksum verification of executable files
+[2018-04-11 20:13:03] Verification complete
+[2018-04-11 20:13:04] Shutdown
+
+
+[2018-04-11 20:14:01] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:14:01] Checking for update on startup
+[2018-04-11 20:14:01] Suche nach verfügbaren Updates...
+[2018-04-11 20:14:01] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:14:01] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:14:01] Nothing to do
+[2018-04-11 20:14:01] Installation wird überprüft...
+[2018-04-11 20:14:01] Performing checksum verification of executable files
+[2018-04-11 20:14:01] Verification complete
+[2018-04-11 20:14:02] Shutdown
+
+
+[2018-04-11 20:14:55] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:14:55] Checking for update on startup
+[2018-04-11 20:14:55] Suche nach verfügbaren Updates...
+[2018-04-11 20:14:55] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:14:55] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:14:55] Nothing to do
+[2018-04-11 20:14:55] Installation wird überprüft...
+[2018-04-11 20:14:55] Performing checksum verification of executable files
+[2018-04-11 20:14:56] Verification complete
+[2018-04-11 20:14:56] Shutdown
+
+
+[2018-04-11 20:15:30] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:15:30] Checking for update on startup
+[2018-04-11 20:15:30] Suche nach verfügbaren Updates...
+[2018-04-11 20:15:30] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:15:30] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:15:30] Nothing to do
+[2018-04-11 20:15:30] Installation wird überprüft...
+[2018-04-11 20:15:30] Performing checksum verification of executable files
+[2018-04-11 20:15:30] Verification complete
+[2018-04-11 20:15:31] Shutdown
+
+
+[2018-04-11 20:19:54] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:19:54] Checking for update on startup
+[2018-04-11 20:19:54] Suche nach verfügbaren Updates...
+[2018-04-11 20:19:54] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:19:55] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:19:55] Nothing to do
+[2018-04-11 20:19:55] Installation wird überprüft...
+[2018-04-11 20:19:55] Performing checksum verification of executable files
+[2018-04-11 20:19:55] Verification complete
+[2018-04-11 20:19:55] Shutdown
+
+
+[2018-04-11 20:20:23] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:20:23] Checking for update on startup
+[2018-04-11 20:20:23] Suche nach verfügbaren Updates...
+[2018-04-11 20:20:23] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:20:23] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:20:23] Nothing to do
+[2018-04-11 20:20:23] Installation wird überprüft...
+[2018-04-11 20:20:23] Performing checksum verification of executable files
+[2018-04-11 20:20:24] Verification complete
+[2018-04-11 20:20:24] Shutdown
+
+
+[2018-04-11 20:20:46] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:20:46] Checking for update on startup
+[2018-04-11 20:20:46] Suche nach verfügbaren Updates...
+[2018-04-11 20:20:46] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:20:46] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:20:46] Nothing to do
+[2018-04-11 20:20:46] Installation wird überprüft...
+[2018-04-11 20:20:46] Performing checksum verification of executable files
+[2018-04-11 20:20:46] Verification complete
+[2018-04-11 20:20:47] Shutdown
+
+
+[2018-04-11 20:21:19] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:21:19] Checking for update on startup
+[2018-04-11 20:21:19] Suche nach verfügbaren Updates...
+[2018-04-11 20:21:20] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:21:20] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:21:20] Nothing to do
+[2018-04-11 20:21:20] Installation wird überprüft...
+[2018-04-11 20:21:20] Performing checksum verification of executable files
+[2018-04-11 20:21:20] Verification complete
+[2018-04-11 20:21:20] Shutdown
+
+
+[2018-04-11 20:22:34] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:22:34] Checking for update on startup
+[2018-04-11 20:22:34] Suche nach verfügbaren Updates...
+[2018-04-11 20:22:34] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:22:34] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:22:34] Nothing to do
+[2018-04-11 20:22:34] Installation wird überprüft...
+[2018-04-11 20:22:34] Performing checksum verification of executable files
+[2018-04-11 20:22:34] Verification complete
+[2018-04-11 20:22:34] Shutdown
+
+
+[2018-04-11 20:22:42] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:22:42] Checking for update on startup
+[2018-04-11 20:22:42] Suche nach verfügbaren Updates...
+[2018-04-11 20:22:43] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:22:43] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:22:43] Nothing to do
+[2018-04-11 20:22:43] Installation wird überprüft...
+[2018-04-11 20:22:43] Performing checksum verification of executable files
+[2018-04-11 20:22:43] Verification complete
+[2018-04-11 20:22:43] Shutdown
+
+
+[2018-04-11 20:23:22] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:23:22] Checking for update on startup
+[2018-04-11 20:23:22] Suche nach verfügbaren Updates...
+[2018-04-11 20:23:22] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:23:22] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:23:22] Nothing to do
+[2018-04-11 20:23:22] Installation wird überprüft...
+[2018-04-11 20:23:22] Performing checksum verification of executable files
+[2018-04-11 20:23:22] Verification complete
+[2018-04-11 20:23:23] Shutdown
+
+
+[2018-04-11 20:23:32] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:23:32] Checking for update on startup
+[2018-04-11 20:23:32] Suche nach verfügbaren Updates...
+[2018-04-11 20:23:33] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:23:33] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:23:33] Nothing to do
+[2018-04-11 20:23:33] Installation wird überprüft...
+[2018-04-11 20:23:33] Performing checksum verification of executable files
+[2018-04-11 20:23:33] Verification complete
+[2018-04-11 20:23:33] Shutdown
+
+
+[2018-04-11 20:24:20] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:24:20] Checking for update on startup
+[2018-04-11 20:24:20] Suche nach verfügbaren Updates...
+[2018-04-11 20:24:20] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:24:20] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:24:20] Nothing to do
+[2018-04-11 20:24:20] Installation wird überprüft...
+[2018-04-11 20:24:20] Performing checksum verification of executable files
+[2018-04-11 20:24:20] Verification complete
+[2018-04-11 20:24:21] Shutdown
+
+
+[2018-04-11 20:26:32] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:26:32] Checking for update on startup
+[2018-04-11 20:26:32] Suche nach verfügbaren Updates...
+[2018-04-11 20:26:32] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:26:32] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:26:32] Nothing to do
+[2018-04-11 20:26:32] Installation wird überprüft...
+[2018-04-11 20:26:32] Performing checksum verification of executable files
+[2018-04-11 20:26:32] Verification complete
+[2018-04-11 20:26:33] Shutdown
+
+
+[2018-04-11 20:27:05] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:27:05] Checking for update on startup
+[2018-04-11 20:27:05] Suche nach verfügbaren Updates...
+[2018-04-11 20:27:05] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:27:06] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:27:06] Nothing to do
+[2018-04-11 20:27:06] Installation wird überprüft...
+[2018-04-11 20:27:06] Performing checksum verification of executable files
+[2018-04-11 20:27:06] Verification complete
+[2018-04-11 20:27:06] Shutdown
+
+
+[2018-04-11 20:27:21] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:27:22] Checking for update on startup
+[2018-04-11 20:27:22] Suche nach verfügbaren Updates...
+[2018-04-11 20:27:22] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:27:22] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:27:22] Nothing to do
+[2018-04-11 20:27:22] Installation wird überprüft...
+[2018-04-11 20:27:22] Performing checksum verification of executable files
+[2018-04-11 20:27:22] Verification complete
+[2018-04-11 20:27:23] Shutdown
+
+
+[2018-04-11 20:28:23] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:28:23] Checking for update on startup
+[2018-04-11 20:28:23] Suche nach verfügbaren Updates...
+[2018-04-11 20:28:23] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:28:23] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:28:23] Nothing to do
+[2018-04-11 20:28:23] Installation wird überprüft...
+[2018-04-11 20:28:23] Performing checksum verification of executable files
+[2018-04-11 20:28:23] Verification complete
+[2018-04-11 20:28:24] Shutdown
+
+
+[2018-04-11 20:29:04] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:29:04] Checking for update on startup
+[2018-04-11 20:29:04] Suche nach verfügbaren Updates...
+[2018-04-11 20:29:04] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:29:04] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:29:04] Nothing to do
+[2018-04-11 20:29:04] Installation wird überprüft...
+[2018-04-11 20:29:04] Performing checksum verification of executable files
+[2018-04-11 20:29:04] Verification complete
+[2018-04-11 20:29:05] Shutdown
+
+
+[2018-04-11 20:32:41] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:32:41] Checking for update on startup
+[2018-04-11 20:32:41] Suche nach verfügbaren Updates...
+[2018-04-11 20:32:42] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:32:42] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:32:42] Nothing to do
+[2018-04-11 20:32:42] Installation wird überprüft...
+[2018-04-11 20:32:42] Performing checksum verification of executable files
+[2018-04-11 20:32:42] Verification complete
+[2018-04-11 20:32:42] Shutdown
+
+
+[2018-04-11 20:32:42] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:32:42] Checking for update on startup
+[2018-04-11 20:32:42] Suche nach verfügbaren Updates...
+[2018-04-11 20:32:43] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:32:43] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:32:43] Nothing to do
+[2018-04-11 20:32:43] Installation wird überprüft...
+[2018-04-11 20:32:43] Performing checksum verification of executable files
+[2018-04-11 20:32:43] Verification complete
+[2018-04-11 20:32:46] Shutdown
+
+
+[2018-04-11 20:33:06] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:33:06] Checking for update on startup
+[2018-04-11 20:33:06] Suche nach verfügbaren Updates...
+[2018-04-11 20:33:06] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:33:07] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:33:07] Nothing to do
+[2018-04-11 20:33:07] Installation wird überprüft...
+[2018-04-11 20:33:07] Performing checksum verification of executable files
+[2018-04-11 20:33:07] Verification complete
+[2018-04-11 20:33:07] Shutdown
+
+
+[2018-04-11 20:33:07] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:33:07] Checking for update on startup
+[2018-04-11 20:33:07] Suche nach verfügbaren Updates...
+[2018-04-11 20:33:07] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:33:08] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:33:08] Nothing to do
+[2018-04-11 20:33:08] Installation wird überprüft...
+[2018-04-11 20:33:08] Performing checksum verification of executable files
+[2018-04-11 20:33:08] Verification complete
+
+
+[2018-04-11 20:34:10] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:34:10] Checking for update on startup
+[2018-04-11 20:34:10] Suche nach verfügbaren Updates...
+[2018-04-11 20:34:10] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:34:11] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:34:11] Nothing to do
+[2018-04-11 20:34:11] Installation wird überprüft...
+[2018-04-11 20:34:11] Performing checksum verification of executable files
+[2018-04-11 20:34:11] Verification complete
+[2018-04-11 20:34:11] Shutdown
+
+
+[2018-04-11 20:34:11] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:34:11] Checking for update on startup
+[2018-04-11 20:34:11] Suche nach verfügbaren Updates...
+[2018-04-11 20:34:11] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:34:12] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:34:12] Nothing to do
+[2018-04-11 20:34:12] Installation wird überprüft...
+[2018-04-11 20:34:12] Performing checksum verification of executable files
+[2018-04-11 20:34:12] Verification complete
+[2018-04-11 20:34:15] Shutdown
+
+
+[2018-04-11 20:34:33] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:34:33] Checking for update on startup
+[2018-04-11 20:34:33] Suche nach verfügbaren Updates...
+[2018-04-11 20:34:33] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:34:34] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:34:34] Nothing to do
+[2018-04-11 20:34:34] Installation wird überprüft...
+[2018-04-11 20:34:34] Performing checksum verification of executable files
+[2018-04-11 20:34:34] Verification complete
+[2018-04-11 20:34:34] Shutdown
+
+
+[2018-04-11 20:34:34] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:34:34] Checking for update on startup
+[2018-04-11 20:34:34] Suche nach verfügbaren Updates...
+[2018-04-11 20:34:34] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:34:35] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:34:35] Nothing to do
+[2018-04-11 20:34:35] Installation wird überprüft...
+[2018-04-11 20:34:35] Performing checksum verification of executable files
+[2018-04-11 20:34:35] Verification complete
+[2018-04-11 20:34:38] Shutdown
+
+
+[2018-04-11 20:37:37] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:37:37] Checking for update on startup
+[2018-04-11 20:37:37] Suche nach verfügbaren Updates...
+[2018-04-11 20:37:37] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:37:38] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:37:38] Nothing to do
+[2018-04-11 20:37:38] Installation wird überprüft...
+[2018-04-11 20:37:38] Performing checksum verification of executable files
+[2018-04-11 20:37:38] Verification complete
+[2018-04-11 20:37:38] Shutdown
+
+
+[2018-04-11 20:37:38] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:37:38] Checking for update on startup
+[2018-04-11 20:37:38] Suche nach verfügbaren Updates...
+[2018-04-11 20:37:39] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:37:39] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:37:39] Nothing to do
+[2018-04-11 20:37:39] Installation wird überprüft...
+[2018-04-11 20:37:39] Performing checksum verification of executable files
+[2018-04-11 20:37:39] Verification complete
+[2018-04-11 20:37:42] Shutdown
+
+
+[2018-04-11 20:38:13] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:38:13] Checking for update on startup
+[2018-04-11 20:38:13] Suche nach verfügbaren Updates...
+[2018-04-11 20:38:13] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:38:13] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:38:13] Nothing to do
+[2018-04-11 20:38:13] Installation wird überprüft...
+[2018-04-11 20:38:13] Performing checksum verification of executable files
+[2018-04-11 20:38:13] Verification complete
+[2018-04-11 20:38:14] Shutdown
+
+
+[2018-04-11 20:38:14] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:38:14] Checking for update on startup
+[2018-04-11 20:38:14] Suche nach verfügbaren Updates...
+[2018-04-11 20:38:14] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:38:14] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:38:14] Nothing to do
+[2018-04-11 20:38:14] Installation wird überprüft...
+[2018-04-11 20:38:14] Performing checksum verification of executable files
+[2018-04-11 20:38:14] Verification complete
+[2018-04-11 20:38:29] Shutdown
+
+
+[2018-04-11 20:39:55] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:39:55] Checking for update on startup
+[2018-04-11 20:39:55] Suche nach verfügbaren Updates...
+[2018-04-11 20:39:56] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:39:56] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:39:56] Nothing to do
+[2018-04-11 20:39:56] Installation wird überprüft...
+[2018-04-11 20:39:56] Performing checksum verification of executable files
+[2018-04-11 20:39:56] Verification complete
+[2018-04-11 20:39:57] Shutdown
+
+
+[2018-04-11 20:39:57] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:39:57] Checking for update on startup
+[2018-04-11 20:39:57] Suche nach verfügbaren Updates...
+[2018-04-11 20:39:57] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:39:57] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:39:57] Nothing to do
+[2018-04-11 20:39:57] Installation wird überprüft...
+[2018-04-11 20:39:57] Performing checksum verification of executable files
+[2018-04-11 20:39:57] Verification complete
+[2018-04-11 20:40:00] Shutdown
+
+
+[2018-04-11 20:40:25] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:40:25] Checking for update on startup
+[2018-04-11 20:40:25] Suche nach verfügbaren Updates...
+[2018-04-11 20:40:26] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:40:26] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:40:26] Nothing to do
+[2018-04-11 20:40:26] Installation wird überprüft...
+[2018-04-11 20:40:26] Performing checksum verification of executable files
+[2018-04-11 20:40:26] Verification complete
+[2018-04-11 20:40:26] Shutdown
+
+
+[2018-04-11 20:42:05] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:42:05] Checking for update on startup
+[2018-04-11 20:42:05] Suche nach verfügbaren Updates...
+[2018-04-11 20:42:05] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:42:06] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:42:06] Nothing to do
+[2018-04-11 20:42:06] Installation wird überprüft...
+[2018-04-11 20:42:06] Performing checksum verification of executable files
+[2018-04-11 20:42:06] Verification complete
+[2018-04-11 20:42:06] Shutdown
+
+
+[2018-04-11 20:42:15] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:42:15] Checking for update on startup
+[2018-04-11 20:42:15] Suche nach verfügbaren Updates...
+[2018-04-11 20:42:15] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:42:15] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:42:15] Nothing to do
+[2018-04-11 20:42:15] Installation wird überprüft...
+[2018-04-11 20:42:15] Performing checksum verification of executable files
+[2018-04-11 20:42:15] Verification complete
+[2018-04-11 20:42:16] Shutdown
+
+
+[2018-04-11 20:42:16] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-11 20:42:16] Checking for update on startup
+[2018-04-11 20:42:16] Suche nach verfügbaren Updates...
+[2018-04-11 20:42:16] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-11 20:42:16] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-11 20:42:16] Nothing to do
+[2018-04-11 20:42:16] Installation wird überprüft...
+[2018-04-11 20:42:16] Performing checksum verification of executable files
+[2018-04-11 20:42:16] Verification complete
+[2018-04-11 20:42:27] Shutdown
+
+
+[2018-04-12 17:06:18] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:06:18] Checking for update on startup
+[2018-04-12 17:06:18] Suche nach verfügbaren Updates...
+[2018-04-12 17:06:18] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:06:19] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:06:19] Nothing to do
+[2018-04-12 17:06:19] Installation wird überprüft...
+[2018-04-12 17:06:19] Performing checksum verification of executable files
+[2018-04-12 17:06:19] Verification complete
+[2018-04-12 17:06:19] Shutdown
+
+
+[2018-04-12 17:06:19] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:06:19] Checking for update on startup
+[2018-04-12 17:06:19] Suche nach verfügbaren Updates...
+[2018-04-12 17:06:19] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:06:20] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:06:20] Nothing to do
+[2018-04-12 17:06:20] Installation wird überprüft...
+[2018-04-12 17:06:20] Performing checksum verification of executable files
+[2018-04-12 17:06:20] Verification complete
+[2018-04-12 17:06:23] Shutdown
+
+
+[2018-04-12 17:07:37] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:07:37] Checking for update on startup
+[2018-04-12 17:07:37] Suche nach verfügbaren Updates...
+[2018-04-12 17:07:38] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:07:38] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:07:38] Nothing to do
+[2018-04-12 17:07:38] Installation wird überprüft...
+[2018-04-12 17:07:38] Performing checksum verification of executable files
+[2018-04-12 17:07:38] Verification complete
+[2018-04-12 17:07:38] Shutdown
+
+
+[2018-04-12 17:07:39] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:07:39] Checking for update on startup
+[2018-04-12 17:07:39] Suche nach verfügbaren Updates...
+[2018-04-12 17:07:39] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:07:39] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:07:39] Nothing to do
+[2018-04-12 17:07:39] Installation wird überprüft...
+[2018-04-12 17:07:39] Performing checksum verification of executable files
+[2018-04-12 17:07:39] Verification complete
+[2018-04-12 17:07:42] Shutdown
+
+
+[2018-04-12 17:09:00] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:09:00] Checking for update on startup
+[2018-04-12 17:09:00] Suche nach verfügbaren Updates...
+[2018-04-12 17:09:00] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:09:01] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:09:01] Nothing to do
+[2018-04-12 17:09:01] Installation wird überprüft...
+[2018-04-12 17:09:01] Performing checksum verification of executable files
+[2018-04-12 17:09:01] Verification complete
+[2018-04-12 17:09:01] Shutdown
+
+
+[2018-04-12 17:20:54] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:20:54] Checking for update on startup
+[2018-04-12 17:20:54] Suche nach verfügbaren Updates...
+[2018-04-12 17:20:55] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:20:55] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:20:55] Nothing to do
+[2018-04-12 17:20:55] Installation wird überprüft...
+[2018-04-12 17:20:55] Performing checksum verification of executable files
+[2018-04-12 17:20:55] Verification complete
+[2018-04-12 17:20:56] Shutdown
+
+
+[2018-04-12 17:30:21] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 17:30:21] Checking for update on startup
+[2018-04-12 17:30:21] Suche nach verfügbaren Updates...
+[2018-04-12 17:30:21] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 17:30:22] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 17:30:22] Nothing to do
+[2018-04-12 17:30:22] Installation wird überprüft...
+[2018-04-12 17:30:22] Performing checksum verification of executable files
+[2018-04-12 17:30:22] Verification complete
+[2018-04-12 17:30:22] Shutdown
+
+
+[2018-04-12 18:10:16] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 18:10:17] Checking for update on startup
+[2018-04-12 18:10:17] Suche nach verfügbaren Updates...
+[2018-04-12 18:10:17] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 18:10:17] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 18:10:17] Nothing to do
+[2018-04-12 18:10:17] Installation wird überprüft...
+[2018-04-12 18:10:17] Performing checksum verification of executable files
+[2018-04-12 18:10:17] Verification complete
+[2018-04-12 18:10:18] Shutdown
+
+
+[2018-04-12 19:21:31] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 19:21:31] Checking for update on startup
+[2018-04-12 19:21:31] Suche nach verfügbaren Updates...
+[2018-04-12 19:21:31] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 19:21:31] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 19:21:31] Nothing to do
+[2018-04-12 19:21:31] Installation wird überprüft...
+[2018-04-12 19:21:31] Performing checksum verification of executable files
+[2018-04-12 19:21:32] Verification complete
+[2018-04-12 19:21:32] Shutdown
+
+
+[2018-04-12 19:23:09] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 19:23:09] Checking for update on startup
+[2018-04-12 19:23:09] Suche nach verfügbaren Updates...
+[2018-04-12 19:23:09] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 19:23:09] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 19:23:09] Nothing to do
+[2018-04-12 19:23:09] Installation wird überprüft...
+[2018-04-12 19:23:09] Performing checksum verification of executable files
+[2018-04-12 19:23:09] Verification complete
+[2018-04-12 19:23:10] Shutdown
+
+
+[2018-04-12 19:23:37] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 19:23:37] Checking for update on startup
+[2018-04-12 19:23:37] Suche nach verfügbaren Updates...
+[2018-04-12 19:23:38] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 19:23:38] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 19:23:38] Nothing to do
+[2018-04-12 19:23:38] Installation wird überprüft...
+[2018-04-12 19:23:38] Performing checksum verification of executable files
+[2018-04-12 19:23:38] Verification complete
+[2018-04-12 19:23:39] Shutdown
+
+
+[2018-04-12 19:24:00] Startup - updater built Mar 19 2018 11:58:07
+[2018-04-12 19:24:00] Checking for update on startup
+[2018-04-12 19:24:00] Suche nach verfügbaren Updates...
+[2018-04-12 19:24:00] Download failed: http error 0 (client-download.steampowered.com/client/steam_cmd_win32)
+[2018-04-12 19:24:00] Download skipped: /client/steam_cmd_win32 version 1521654438, installed version 1521654438
+[2018-04-12 19:24:00] Nothing to do
+[2018-04-12 19:24:00] Installation wird überprüft...
+[2018-04-12 19:24:00] Performing checksum verification of executable files
+[2018-04-12 19:24:00] Verification complete
+[2018-04-12 19:24:01] Shutdown

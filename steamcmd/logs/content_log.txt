@@ -1,0 +1,251 @@
+
+
+[2018-04-11 20:04:05] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:04:06] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:04:09] Got 100 content servers from directory
+[2018-04-11 20:04:13] Loaded 0 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:04:14] AppID 4020 state changed : Update Required,
+[2018-04-11 20:04:14] AppID 4020 scheduler update : Priority First, legacy=no, restore="", timeSinceLastPlayed=1, appDisableSecondsRemaining=0
+[2018-04-11 20:04:14] AppID 4020 state changed : Update Required,Update Queued,
+[2018-04-11 20:04:14] AppID 4020 scheduler update : Priority First, legacy=no, restore="", timeSinceLastPlayed=1, appDisableSecondsRemaining=0
+[2018-04-11 20:04:14] AppID 4020 state changed : Update Required,Update Queued,Update Running,
+[2018-04-11 20:04:14] AppID 4020 update changed : Running,
+[2018-04-11 20:04:14] AppID 4020 update changed : Running,Reconfiguring,
+[2018-04-11 20:04:14] Failed to get "/serverlist/5/20/" from valve500.steamcontent.com (HTTP Error 0)
+[2018-04-11 20:04:14] Failed to get "/serverlist/5/20/" from valve501.steamcontent.com (HTTP Error 0)
+[2018-04-11 20:04:14] Failed to get "/serverlist/5/20/" from valve526.steamcontent.com (HTTP Error 0)
+[2018-04-11 20:04:14] Failed to get "/serverlist/5/20/" from valve504.steamcontent.com (HTTP Error 0)
+[2018-04-11 20:04:14] Got 22 download sources via "/serverlist/5/20/" from valve559.steamcontent.com
+[2018-04-11 20:04:14] Created download interface of type 'CDN' (2) to host cdn1-fra1.steamcontent.com (cdn1-fra1.steamcontent.com)
+[2018-04-11 20:04:14] Created download interface of type 'CDN' (2) to host cdn1-fra1.steamcontent.com (cdn1-fra1.steamcontent.com)
+[2018-04-11 20:04:14] Created download interface of type 'CS' (1) to host valve1605.steampipe.steamcontent.com (valve1605.steamcontent.com)
+[2018-04-11 20:04:15] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cdn1-fra1.steamcontent.com): AuthenticateDepotID (4021) - Success!
+[2018-04-11 20:04:15] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): cdn1-fra1.steamcontent.com/depot/4021/manifest/946335569128409106/5?l=12&e=1524074654&h=00ca859be0a4d7113dec6379078bc7a7e320240a - received 200 (OK) HTTP response
+[2018-04-11 20:04:15] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): AuthenticateDepotID (4022) - Success!
+[2018-04-11 20:04:15] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): cdn1-fra1.steamcontent.com/depot/4022/manifest/4597359591361785186/5?l=12&e=1524074655&h=54317d48474b39a82fab83f6ee27042594dc62e5 - received 200 (OK) HTTP response
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,Validating,
+[2018-04-11 20:04:15] Validating files (new target,full) ...
+[2018-04-11 20:04:15] File validation finished: 2241 files (3877024134 bytes) total, 2241 files (3877024134 bytes) mismatched (78 msec).
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,Preallocating,
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,
+[2018-04-11 20:04:15] AppID 4020 update started : download 0/2185088480, store 0/0, reuse 0/0, stage 0/3877024134
+[2018-04-11 20:04:15] AppID 4020 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,Downloading,
+[2018-04-11 20:04:15] AppID 4020 update changed : Running,Downloading,Staging,
+[2018-04-11 20:04:15] Downloading 5608 chunks from depot 4021
+[2018-04-11 20:04:16] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cdn1-fra1.steamcontent.com): AuthenticateDepotID (4021) - Success!
+[2018-04-11 20:04:16] HTTP (CS,1605) - valve1605.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: valve1605.steamcontent.com): AuthenticateDepotID (4021) - Success!
+[2018-04-11 20:04:27] Increasing target number of download connections to 4 (rate was 0.000, now 28.193)
+[2018-04-11 20:04:27] Created download interface of type 'CS' (1) to host valve1603.steampipe.steamcontent.com (valve1603.steamcontent.com)
+[2018-04-11 20:04:27] HTTP (CS,1603) - valve1603.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: valve1603.steamcontent.com): AuthenticateDepotID (4021) - Success!
+[2018-04-11 20:04:39] Increasing target number of download connections to 5 (rate was 28.193, now 40.830)
+[2018-04-11 20:04:39] Created download interface of type 'CS' (1) to host valve1607.steampipe.steamcontent.com (valve1607.steamcontent.com)
+[2018-04-11 20:04:39] HTTP (CS,1607) - valve1607.steampipe.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: valve1607.steamcontent.com): AuthenticateDepotID (4021) - Success!
+[2018-04-11 20:05:28] Current download rate: 46.015 Mbps
+[2018-04-11 20:06:29] Current download rate: 46.943 Mbps
+[2018-04-11 20:07:30] Current download rate: 46.737 Mbps
+[2018-04-11 20:08:31] Current download rate: 46.424 Mbps
+[2018-04-11 20:09:32] Current download rate: 46.512 Mbps
+[2018-04-11 20:10:24] Downloading 286 chunks from depot 4022
+[2018-04-11 20:10:24] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): AuthenticateDepotID (4022) - Success!
+[2018-04-11 20:10:24] HTTP (CS,1607) - valve1607.steampipe.steamcontent.com (155.133.248.17:80 / 155.133.248.17:80, host: valve1607.steamcontent.com): AuthenticateDepotID (4022) - Success!
+[2018-04-11 20:10:24] HTTP (CS,1603) - valve1603.steampipe.steamcontent.com (155.133.248.13:80 / 155.133.248.13:80, host: valve1603.steamcontent.com): AuthenticateDepotID (4022) - Success!
+[2018-04-11 20:10:24] HTTP (CS,1605) - valve1605.steampipe.steamcontent.com (155.133.248.15:80 / 155.133.248.15:80, host: valve1605.steamcontent.com): AuthenticateDepotID (4022) - Success!
+[2018-04-11 20:10:32] Current download rate: 45.072 Mbps
+[2018-04-11 20:10:38] AppID 4020 update changed : Running,
+[2018-04-11 20:10:38] AppID 4020 update changed : Running,Committing,
+[2018-04-11 20:10:38] AppID 4020 file commit : 2416 updated, 0 moved, 0 deleted
+[2018-04-11 20:10:41] AppID 4020 state changed : Fully Installed,Update Queued,Update Running,
+[2018-04-11 20:10:41] AppID 4020 finished update, mounted depots (BuildID 2558155) : 4021 (946335569128409106),4022 (4597359591361785186),
+[2018-04-11 20:10:41] AppID 4020 update changed : Running,
+[2018-04-11 20:10:41] AppID 4020 update changed : None
+[2018-04-11 20:10:41] AppID 4020 state changed : Fully Installed,Update Queued,
+[2018-04-11 20:10:41] AppID 4020 state changed : Fully Installed,
+[2018-04-11 20:10:41] AppID 4020 scheduler finished : removed from schedule
+[2018-04-11 20:10:41] HTTP (CS,1607) - valve1607.steampipe.steamcontent.com (155.133.248.17:80 / 155.133.248.17:80, host: valve1607.steamcontent.com): Closing connection
+[2018-04-11 20:10:41] HTTP (CS,1603) - valve1603.steampipe.steamcontent.com (155.133.248.13:80 / 155.133.248.13:80, host: valve1603.steamcontent.com): Closing connection
+[2018-04-11 20:10:41] HTTP (CS,1605) - valve1605.steampipe.steamcontent.com (155.133.248.15:80 / 155.133.248.15:80, host: valve1605.steamcontent.com): Closing connection
+[2018-04-11 20:10:41] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): Closing connection
+[2018-04-11 20:10:41] HTTP (CDN,15) - cdn1-fra1.steamcontent.com (155.133.250.106:80 / 155.133.250.106:80, host: cdn1-fra1.steamcontent.com): Closing connection
+
+
+[2018-04-11 20:11:02] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:11:02] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:11:20] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:11:37] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:11:38] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:11:39] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:11:40] Got 100 content servers from directory
+
+
+[2018-04-11 20:12:40] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:13:03] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:14:02] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:14:56] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:15:30] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:19:55] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:20:24] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:20:46] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:21:20] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:22:34] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:22:43] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:23:22] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:23:33] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:24:21] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:26:32] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:27:06] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:27:22] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:28:23] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:29:04] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:32:42] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:32:43] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:32:44] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:32:45] Got 100 content servers from directory
+
+
+[2018-04-11 20:33:07] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:33:08] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:34:11] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:34:12] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:34:13] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:34:14] Got 100 content servers from directory
+
+
+[2018-04-11 20:34:34] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:34:35] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:34:36] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:34:37] Got 100 content servers from directory
+
+
+[2018-04-11 20:37:38] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:37:39] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:37:41] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:37:41] Got 100 content servers from directory
+
+
+[2018-04-11 20:38:13] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:38:14] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:38:28] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:39:56] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:39:57] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:39:59] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-11 20:39:59] Got 100 content servers from directory
+
+
+[2018-04-11 20:40:26] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:42:06] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:42:15] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-11 20:42:17] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-11 20:42:26] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 17:06:19] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 17:06:20] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-12 17:06:21] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-12 17:06:22] Got 100 content servers from directory
+
+
+[2018-04-12 17:07:38] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 17:07:39] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+[2018-04-12 17:07:41] Loaded 1 apps from install folder "e:\desktop\webinterface_neu\servers\test\steamapps\appmanifest_*.acf".
+[2018-04-12 17:07:41] Got 100 content servers from directory
+
+
+[2018-04-12 17:09:01] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 17:20:55] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 17:30:22] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 18:10:17] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 19:21:32] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 19:23:10] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 19:23:38] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
+
+
+[2018-04-12 19:24:00] Loaded 0 apps from install folder "E:\Desktop\webinterface_neu\steamcmd\steamapps\appmanifest_*.acf".
