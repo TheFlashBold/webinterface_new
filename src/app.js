@@ -1,4 +1,7 @@
 import angular from 'angular';
+import io from 'socket.io-client';
+
+window.io = io;
 
 import './css/maed.min.css';
 import './css/material-design-iconic-font.min.css';
@@ -7,6 +10,7 @@ import './css/animate.min.css';
 const MODULE_NAME = 'webinterface';
 
 const app = angular.module(MODULE_NAME, []);
+
 
 let controllerContext = require.context("./controllers", true, /^.*\.js$/);
 controllerContext.keys().forEach(function (controllerPath) {
@@ -20,6 +24,6 @@ directiveContext.keys().forEach(function (directivePath) {
     app.directive(directiveName, require("./directives/" + directiveName));
 });
 
-angular.element(function() {
+angular.element(function () {
     angular.bootstrap(document, [MODULE_NAME]);
 });

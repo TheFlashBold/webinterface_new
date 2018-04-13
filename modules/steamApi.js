@@ -18,7 +18,7 @@ module.exports = {
     init: async () => {
         await steamcmd.prep();
     },
-    install: async (appId, serverId, onUpdate, onExit) => {
+    install: async (appId, serverId, onUpdate) => {
         steamcmd.setOptions({installDir: path.resolve(global.config.server.path, serverId)});
         let runObj = steamcmd.updateApp(appId);
         runObj.outputStream.on('data', data => {
@@ -37,10 +37,6 @@ module.exports = {
             if(exitCode === 126){
                 console.error("steam error -- 32bit on 64bit system?");
                 process.exit(126);
-            }
-            if(onExit && onExit instanceof Function)
-            {
-                onExit(exitCode);
             }
         });
     }

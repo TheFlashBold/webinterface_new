@@ -1,6 +1,12 @@
 module.exports = [
     "$scope",
-    ($scope) => {
+    ($scope,) => {
+        let socket = io();
+
+        socket.on('log', (data) => {
+            console.log(data);
+        });
+
         $scope.showSidebar = false;
         $scope.openSidebar = () => {
             $scope.showSidebar = true;

@@ -8,13 +8,13 @@ module.exports = class SteamGame extends Game {
         this.appID = appID;
     }
 
-    async install(){
-        await super.install();
-        await steamApi.install(this.appID, this.serverID, this.onUpdate, this.onExit);
+    async install(config){
+        await super.install(config);
+        await steamApi.install(this.appID, this.serverID, this.onUpdate);
     }
 
     async update(){
-        await super.update();
+        await this.install();
     }
 
 };

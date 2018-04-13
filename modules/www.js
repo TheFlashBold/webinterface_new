@@ -21,7 +21,14 @@ module.exports = function () {
 
     io.attach(app);
 
-    global.io = app._io;
+    global.io = io;
+    global.app = app;
+
+
+    app._io.on('connection', (socket) => {
+        console.log(socket);
+        socket.join('server-mc');
+    });
 
     app.use(koaBody());
     app.use(router.routes());
