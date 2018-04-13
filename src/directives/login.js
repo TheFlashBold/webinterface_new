@@ -113,7 +113,7 @@ module.exports = [
                         if (data.data.success && data.data.success === true) {
                             let user = data.data;
                             delete user.success;
-                            $timeout(() => {
+                            scope.$applyAsync(() => {
                                 scope.user = user;
                             });
                             console.log("success");

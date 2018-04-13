@@ -17,9 +17,5 @@ module.exports = [
         $scope.profileDropdown = {
             'View Profile': () => {}
         };
-
-        $scope.$watch('user.token', () => {
-           console.log($scope.user);
-        });
     }
 ];

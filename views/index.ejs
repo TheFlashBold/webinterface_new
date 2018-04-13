@@ -10,10 +10,9 @@
 </head>
 <body ng-controller="webinterface" ng-class="{'block-opened': showSidebar}">
 
-<login ng-if="true" user="user"></login>
+<login ng-show="!user.token" user="user"></login>
 
-<% /*
-<header id="header">
+<header id="header" ng-show="user.token">
     <div class="logo">
         <a href="/" class="hidden-xs">
             Webinterface
@@ -95,7 +94,7 @@
     </ul>
 </header>
 
-<section id="main">
+<section id="main" ng-show="user.token">
     <aside id="notifications">
         <ul class="tab-nav tab-nav--justified tab-nav--icon">
             <li><a class="user-alert__messages" href="form-examples.html#notifications__messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a></li>
@@ -310,7 +309,6 @@
     </footer>
 
 </section>
-*/ %>
 
 </body>
 </html>
