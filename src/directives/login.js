@@ -54,8 +54,6 @@ module.exports = [
                         <button class="btn btn--light btn--icon m-t-15" ng-click="register()"><i class="zmdi zmdi-plus"></i></button>
                     </div>
                 </div>
-            
-                <!-- Forgot Password -->
                 <div class="login__block" ng-class="{'toggled': state == 'forgotpassword'}" id="l-forget-password">
                     <div class="login__block__header palette-Purple bg">
                         <i class="zmdi zmdi-account-circle"></i>

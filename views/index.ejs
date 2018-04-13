@@ -8,10 +8,11 @@
     <title><%- title %></title>
     <script src="js/bundle.js"></script>
 </head>
-<body ng-controller="webinterfaceCtrl" ng-class="{'block-opened': showSidebar}">
+<body ng-controller="webinterface" ng-class="{'block-opened': showSidebar}">
 
-<login ng-if="false" user="user"></login>
+<login ng-if="true" user="user"></login>
 
+<% /*
 <header id="header">
     <div class="logo">
         <a href="/" class="hidden-xs">
@@ -309,5 +310,7 @@
     </footer>
 
 </section>
+*/ %>
+
 </body>
 </html>

@@ -28,7 +28,7 @@ const config = {
             preventProxyConnections: [false, Boolean],
             serverPort: [25565, Number, 0, 65535],
             maxWorldSize: [29999984, Number, 0, 29999984],
-            levelType: ["DEFAULT", Enumerator, ["DEFAULT", "FLAT"]],
+            levelType: ["DEFAULT", "Enumerator", ["DEFAULT", "FLAT"]],
             enableRcon: [false, Boolean],
             levelSeed: ["", String, 0, 64],
             forceGamemode: [false, Boolean],

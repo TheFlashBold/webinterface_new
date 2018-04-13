@@ -14,7 +14,7 @@ module.exports = [
                     </a>
 
                     <ul class="dropdown-menu pull-right">
-                        <li ng-repeat="(text, action) in fields"><a href="#" ng-click="action()" ng-bind-html="text"></a></li>
+                        <li ng-repeat="(text, action) in fields"><a href="#" ng-click="action()">{{text}}</a></li>
                     </ul>
                 </div>
         `,

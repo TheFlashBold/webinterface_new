@@ -1,24 +1,24 @@
 import angular from 'angular';
 
-import webinterfaceCtrl from './controller/webinterface';
-
-import login from './directives/login';
-import formInput from './directives/formInput';
-import dropdown from './directives/dropdown';
-import dropdownProfile from './directives/dropdownProfile';
-
 import './css/maed.min.css';
 import './css/material-design-iconic-font.min.css';
 import './css/animate.min.css';
 
 const MODULE_NAME = 'webinterface';
 
-angular.module(MODULE_NAME, [])
-    .controller('webinterfaceCtrl', webinterfaceCtrl)
-    .directive('formInput', formInput)
-    .directive('dropdown', dropdown)
-    .directive('dropdownProfile', dropdownProfile)
-    .directive('login', login);
+const app = angular.module(MODULE_NAME, []);
+
+let controllerContext = require.context("./controllers", true, /^.*\.js$/);
+controllerContext.keys().forEach(function (controllerPath) {
+    let controllerName = controllerPath.replace("./", "").replace(".js", "");
+    app.controller(controllerName, require("./controllers/" + controllerName));
+});
+
+let directiveContext = require.context("./directives", true, /^.*\.js$/);
+directiveContext.keys().forEach(function (directivePath) {
+    let directiveName = directivePath.replace("./", "").replace(".js", "");
+    app.directive(directiveName, require("./directives/" + directiveName));
+});
 
 angular.element(function() {
     angular.bootstrap(document, [MODULE_NAME]);
