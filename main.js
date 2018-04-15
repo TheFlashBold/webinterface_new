@@ -15,13 +15,12 @@ const Games = require('./modules/games');
     let games = Games(steamApi);
 
     let minecraftServer = new games.minecraft("mc");
-    await minecraftServer.install({version: '1.12.2'});
-    await minecraftServer.start();
+    //await minecraftServer.install({version: '1.12.2'});
+    //await minecraftServer.start();
 
     //let gmodServer = new games.gmod("test");
     //await gmodServer.install();
     //await gmodServer.start();
-
 })();
 
 process.on('unhandledRejection', (err) => {

@@ -1,27 +1,30 @@
 module.exports = [
     "$scope",
-    ($scope,) => {
+    function($scope) {
+        $scope.state = 'login';
+
+        $scope.user = {
+            email: "tycho.holzer@gmail.com",
+            password: "lelele"
+        };
+
+        $scope.isAccessable = false;
+
+        $scope.lock = () => {
+            changeState('locked');
+        };
+
+        window.changeState = (state) => {
+            $scope.$applyAsync(() => {
+                $scope.state = state;
+                //console.log(state);
+            });
+        };
+
         let socket = io();
 
         socket.on('log', (data) => {
             console.log(data);
         });
-
-        $scope.showSidebar = false;
-        $scope.openSidebar = () => {
-            $scope.showSidebar = true;
-        };
-        $scope.hideSidebar = () => {
-            $scope.showSidebar = false;
-        };
-
-        $scope.user = {
-            email: "",
-            password: ""
-        };
-
-        $scope.profileDropdown = {
-            'View Profile': () => {}
-        };
     }
 ];

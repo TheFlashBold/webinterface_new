@@ -26,7 +26,6 @@ module.exports = function () {
 
 
     app._io.on('connection', (socket) => {
-        console.log(socket);
         socket.join('server-mc');
     });
 

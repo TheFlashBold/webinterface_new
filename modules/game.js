@@ -7,7 +7,7 @@ const fs = require('fs-extra');
 
 module.exports = class Game {
 
-    constructor(id, config){
+    constructor(id, config) {
         this.serverID = id;
         this.config = config;
 
@@ -16,30 +16,30 @@ module.exports = class Game {
         this.channel = app._io;
     }
 
-    async install(config){
+    async install(config) {
         fs.mkdirsSync(path.resolve(global.config.server.path, this.serverID));
     }
 
-    async update(){
+    async update() {
 
     }
 
-    async remove(){
+    async remove() {
         fs.removeSync(path.resolve(global.config.server.path, this.serverID));
     }
 
-    async onUpdate(progress){
+    async onUpdate(progress) {
         console.log("process: " + progress);
         this.channel.emit('progress', progress);
     }
 
-    async onExit(exitCode){
+    async onExit(exitCode) {
         // 0 = success
         console.log("exit: " + exitCode);
         this.channel.emit('exit', exitCode);
     }
 
-    async start(cmd){
+    async start(cmd) {
         await this.generateConfig();
         let p = spawn(cmd.shift(), cmd, {
             //detached: true,
@@ -47,26 +47,30 @@ module.exports = class Game {
             shell: true
         });
 
-        p.stdout.on('data', (data) => {this.onLog(data);});
-        p.stderr.on('data', (data) => {this.onLog(data);});
+        p.stdout.on('data', (data) => {
+            this.onLog(data);
+        });
+        p.stderr.on('data', (data) => {
+            this.onLog(data);
+        });
         //this.watchLog();
     }
 
-    async watchLog(){
+    async watchLog() {
         let blah = spawn('tail', ['-f', 'process.log']);
         blah.stdout.on('data', this.onLog);
         blah.stderr.on('data', this.onLog);
         blah.on('exit', this.onExit);
     }
 
-    async onLog(data){
+    async onLog(data) {
         console.log("[" + this.serverID + "]: " + data.toString().replace("\n", ""));
         this.channel.emit('log', data.toString());
     }
 
-    async generateConfig(){
-        for(let [filename, config] of Object.entries(this.config)){
-            if(filename !== "install") {
+    async generateConfig() {
+        if (this.config && this.config.files) {
+            for (let [filename, config] of Object.entries(this.config.files)) {
                 fs.writeFileSync(path.resolve(global.config.server.path, this.serverID, filename), serverUtility.renderFile(config, {}), 'UTF-8');
             }
         }

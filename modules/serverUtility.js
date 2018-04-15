@@ -23,7 +23,15 @@ function getConfigValues(fields) {
     return config;
 }
 
+function getValue(field){
+    if(field instanceof Array){
+        return field[0];
+    }
+    return field;
+}
+
 module.exports = {
     getConfig: getConfig,
-    renderFile: renderFile
+    renderFile: renderFile,
+    getValue: getValue
 };

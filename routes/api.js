@@ -10,7 +10,21 @@ module.exports = (router) => {
             name: ctx.request.body.name || "Tycho Holzer",
             email: ctx.request.body.email,
             token: "dgjdszsd68873gh3h8f",
-            success: true
+            success: true,
+            servers: [
+                {
+                    name: "Minecraft",
+                    id: "mc"
+                },
+                {
+                    name: "Gmod TTT",
+                    id: "test"
+                },
+                {
+                    name: "Lel Server",
+                    id: "kalasch"
+                }
+            ]
         };
     });
 
