@@ -42,6 +42,12 @@ app.config([
     }
 ]);
 
+app.filter('filenames', function() {
+    return function(input) {
+        return input.replace('.', '_');
+    };
+});
+
 angular.element(function () {
     angular.bootstrap(document, [MODULE_NAME]);
 });
