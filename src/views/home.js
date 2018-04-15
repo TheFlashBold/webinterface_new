@@ -6,7 +6,7 @@ module.exports = [
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Recent Tickets</h4>
+                            <h4 class="card-title">Server</h4>
                             <div class="table-responsive ps ps--theme_default" data-ps-id="5482708a-926a-30a7-7aa6-a3a742f800fe">
                                 <table class="table">
                                     <thead>
@@ -51,6 +51,7 @@ module.exports = [
                                     <div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
                                 </div>
                             </div>
+                            <button type="button" class="btn btn-primary"><i class="mdi mdi-server-plus"> Server erstellen</i></button>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,20 @@
+const serverUtitlity = require('./../modules/serverUtility');
 
 module.exports = (router) => {
 
     router.get('/api/', (ctx, next) => {
         ctx.body = "test";
+    });
+
+    router.get('/api/server/:serverId', (ctx, next) => {
+        let id = ctx.params.serverId;
+        let server = {};
+        if(id === "mc"){
+            server = new global.games.minecraft("mc");
+        } else {
+            server = new global.games.gmod("test");
+        }
+        ctx.body = server.config;
     });
 
     router.post('/login/', (ctx, next) => {

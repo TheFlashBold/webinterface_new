@@ -14,7 +14,7 @@ const Games = require('./modules/games');
     await steamApi.init();
     let games = Games(steamApi);
 
-    let minecraftServer = new games.minecraft("mc");
+    //let minecraftServer = new games.minecraft("mc");
     //await minecraftServer.install({version: '1.12.2'});
     //await minecraftServer.start();
 

@@ -41,47 +41,49 @@ const versions = {
 };
 
 const config = {
-    version: [versions[Object.keys(versions)[0]], "Enumerator", versions],
-    ram: [1, Number, 1, 128],
+    fields: {
+        version: [Object.keys(versions)[0], "Version", "Enumerator", Object.keys(versions)],
+        ram: [1, "Ram (GB)", "Number", 1, 128],
+    },
     files: {
         "server\.properties": {
             fields: {
-                motd: ["", String, 0, 64],
-                maxPlayers: [20, Number, 1, 2147483647],
-                gamemode: [0, Number, 0, 3],
-                viewDistance: [10, Number, 3, 15],
-                opPermissionLevel: [4, Number, 1, 4],
-                allowNether: [true, Boolean],
-                levelName: ["world", String, 0, 64],
-                enableQuery: [false, Boolean],
-                allowFlight: [false, Boolean],
-                preventProxyConnections: [false, Boolean],
-                serverPort: [25565, Number, 1, 65534],
-                maxWorldSize: [29999984, Number, 0, 29999984],
-                levelType: ["DEFAULT", "Enumerator", ["DEFAULT", "FLAT", "LARGEBIOMES", "AMPLIFIED", "CUSTOMIZED"]],
-                enableRcon: [false, Boolean],
-                levelSeed: ["", String, 0, 64],
-                forceGamemode: [false, Boolean],
-                serverIp: ["", String, 0, 16],
-                networkCompressionThreshold: [256, Number, 0, 1024],
-                maxBuildHeight: [256, Number, 0, 256],
-                spawnNpcs: [true, Boolean],
-                whiteList: [false, Boolean],
-                spawnAnimals: [true, Boolean],
-                hardcore: [false, Boolean],
-                snooperEnabled: [true, Boolean],
-                onlineMode: [true, Boolean],
-                pvp: [true, Boolean],
-                difficulty: [1, Number, 0, 3],
-                enableCommandBlock: [false, Boolean],
-                maxTickTime: [60000, Number, 0, 60000],
-                spawnMonsters: [true, Boolean],
-                generateStructures: [true, Boolean],
-                broadcastConsoleToOps: [true, Boolean],
-                playerIdleTimeout: [0, Number, 0, 36000],
-                resourcePack: ["", String, 0, 128],
-                generatorSettings: ["", String, 0, 128],
-                resourcePackSha: ["", String, 0, 128]
+                motd: ["", "Message of the day", "String", 0, 64],
+                maxPlayers: [20, "Max players", "Number", 1, 2147483647],
+                gamemode: [0, "Gamemode", "Number", 0, 3],
+                viewDistance: [10, "View distance", "Number", 3, 15],
+                opPermissionLevel: [4, "Op permission level", "Number", 1, 4],
+                allowNether: [true, "Allow nether", "Boolean"],
+                levelName: ["world", "Level name", "String", 0, 64],
+                enableQuery: [false, "Enable query", "Boolean"],
+                allowFlight: [false, "Allow flight", "Boolean"],
+                preventProxyConnections: [false, "Prevent proxy connections", "Boolean"],
+                serverPort: [25565, "Port", "Number", 1, 65534],
+                maxWorldSize: [29999984, "Max world size", "Number", 0, 29999984],
+                levelType: ["DEFAULT", "Level type", "Enumerator", ["DEFAULT", "FLAT", "LARGEBIOMES", "AMPLIFIED", "CUSTOMIZED"]],
+                enableRcon: [false, "Rcon", "Boolean"],
+                levelSeed: ["", "Seed", "String", 0, 64],
+                forceGamemode: [false, "Force gamemode", "Boolean"],
+                serverIp: ["", "Ip", "String", 0, 16],
+                networkCompressionThreshold: [256, "Compression threshold", "Number", 0, 1024],
+                maxBuildHeight: [256, "Max build height", "Number", 0, 256],
+                spawnNpcs: [true, "Spawn NPCs", "Boolean"],
+                whiteList: [false, "White list", "Boolean"],
+                spawnAnimals: [true, "Spawn animals", "Boolean"],
+                hardcore: [false, "Hardcore", "Boolean"],
+                snooperEnabled: [true, "Snooper", "Boolean"],
+                onlineMode: [true, "Online mode", "Boolean"],
+                pvp: [true, "PvP", "Boolean"],
+                difficulty: [1, "Difficulty", "Number", 0, 3],
+                enableCommandBlock: [false, "Command block", "Boolean"],
+                maxTickTime: [60000, "Max tick time", "Number", 0, 60000],
+                spawnMonsters: [true, "Spawn monsters", "Boolean"],
+                generateStructures: [true, "Generate structures", "Boolean"],
+                broadcastConsoleToOps: [true, "Broadcast console to ops", "Boolean"],
+                playerIdleTimeout: [0, "Player idle timeout", "Number", 0, 36000],
+                resourcePack: ["", "Resource pack", "String", 0, 128],
+                generatorSettings: ["", "Generator settings", "String", 0, 128],
+                resourcePackSha: ["", "Resouce pack sha1", "String", 0, 128]
             },
             file: `
             generator-settings=<%- generatorSettings %>
@@ -124,7 +126,7 @@ const config = {
         },
         "eula\.txt": {
             fields: {
-                eula: [true, Boolean]
+                eula: [true, "Eula", "Boolean"]
             },
             file: `
             eula=<%- eula %>
@@ -132,7 +134,7 @@ const config = {
         },
         "ops\.json": {
             fields: {
-                ops: [[], Array, {uuid: ["", String, 0, 64], name: ["", String, 0, 64], level: [0, Number, 0, 10]}]
+                ops: [[], "Ops", "Array", {uuid: ["", "UUID", "String", 0, 64], name: ["", "Name", "String", 0, 64], level: [0, "Level", "Number", 0, 10]}]
             },
             file: `
             <%- JSON.stringify(ops, null, 4) %>
@@ -157,7 +159,7 @@ module.exports = class MinecraftServer extends Game {
     }
 
     async start() {
-        await super.start(["java", "-server", "-d64", "-Xms" + serverUtility.getValue(this.config.ram) +"G", "-Xmx" + serverUtility.getValue(this.config.ram) +"G", "-jar server.jar", "nogui"]);
+        await super.start(["java", "-server", "-d64", "-Xms" + serverUtility.getValue(this.config.fields.ram) +"G", "-Xmx" + serverUtility.getValue(this.config.fields.ram) +"G", "-jar server.jar", "nogui"]);
     }
 
 };

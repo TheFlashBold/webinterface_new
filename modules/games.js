@@ -8,5 +8,7 @@ module.exports = (steamApi) => {
         games[game.replace(".js", "")] = require(path.resolve(global.config.path, 'games', game));
     });
 
+    global.games = games;
+
     return games;
 };
