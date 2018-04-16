@@ -45,16 +45,13 @@
     "angular": "^1.6.9",
     "angular-route": "^1.6.9",
     "bootstrap": "^4.1.0",
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11",
     "grunt": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-webpack": "^3.1.1",
-    "image-webpack-loader": "^4.2.0",
     "jquery": "^3.3.1",
     "pkg": "^4.3.1",
     "popper.js": "^1.14.3",
     "socket.io-client": "^2.1.0",
-    "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
   }

@@ -5,11 +5,6 @@ import io from 'socket.io-client';
 import * as jQuery from 'jquery';
 import 'bootstrap/dist/js/bootstrap';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/style.pro.css';
-import '@mdi/font/css/materialdesignicons.min.css';
-import './css/customStyles.css';
-
 window.io = io;
 
 const MODULE_NAME = 'webinterface';

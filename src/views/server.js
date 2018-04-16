@@ -8,7 +8,7 @@ module.exports = [
                     <div class="card-body">
                         <h4 class="card-title">{{serverId}}</h4>
                         <div class="accordion" role="tablist">
-                            <div class="card">
+                            <div class="card" ng-if="config.fields">
                                 <div class="card-header" role="tab">
                                     <h6 class="mb-0">
                                         <a data-toggle="collapse" href="#settings" class="collapsed">
