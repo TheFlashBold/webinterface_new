@@ -4,8 +4,15 @@
   "description": "",
   "main": "main.js",
   "pkg": {
-    "scripts": "./**/*.js",
-    "assets": "frontend/**/*"
+    "scripts": [
+      "modules/*.js",
+      "routes/*.js",
+      "games/*.js"
+    ],
+    "assets": [
+      "frontend/**/*",
+      "views/*"
+    ]
   },
   "bin": {
     "pkg": "main.js"
@@ -40,7 +47,8 @@
     "popper.js": "^1.14.3",
     "socket.io-client": "^2.1.0",
     "steamcmd-interface": "^1.1.0",
-    "url-loader": "^1.0.1"
+    "url-loader": "^1.0.1",
+    "winston": "^2.4.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",

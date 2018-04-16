@@ -4,7 +4,7 @@ const koaRouter = require('koa-router');
 const koaEjs = require('koa-ejs');
 const koaIO = require('koa-socket');
 const koaStatic = require('koa-static');
-
+const logger = global.logger;
 const Promise = require('bluebird');
 const fs = require('fs');
 const path = require('path');
@@ -43,6 +43,6 @@ module.exports = function () {
     });
 
     app.listen(global.config.webserver.port);
-
+    logger.info(`Starting webserver on port ${global.config.webserver.port}.`);
     return app;
 };

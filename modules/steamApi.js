@@ -1,6 +1,7 @@
 const SteamCmd = require('steamcmd-interface');
 const Promise = require('bluebird');
 const path = require('path');
+const logger = global.logger;
 
 let config = {installDir: global.config.path};
 if (global.config.steamcmd) {
@@ -16,9 +17,11 @@ const steamcmd = new SteamCmd(config);
 
 module.exports = {
     init: async () => {
+        logger.info(`Loggin in steam ${config.username?config.username:'Anonymously'}.`);
         await steamcmd.prep();
     },
     install: async (appId, serverId, onUpdate) => {
+        logger.info(`Installing ${appId} in ${serverId}.`);
         steamcmd.setOptions({installDir: path.resolve(global.config.server.path, serverId)});
         let runObj = steamcmd.updateApp(appId);
         runObj.outputStream.on('data', data => {

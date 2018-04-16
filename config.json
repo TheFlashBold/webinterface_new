@@ -1,0 +1,11 @@
+{
+    "webserver": {
+        "port": 5000
+    },
+    "steamcmd": {
+        "path": "./steamcmd/"
+    },
+    "server": {
+        "path": "./servers/"
+    }
+}
