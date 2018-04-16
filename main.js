@@ -4,10 +4,20 @@ const path = require('path');
 global.config = require(path.resolve(process.cwd(), 'config.json'));
 global.config.path = path.resolve('./');
 
+let timeStamp = () => '[' + (new Date()).toLocaleTimeString() + ']';
 const winston = require('winston');
 const logger = new (winston.Logger)({
     transports: [
-        new (winston.transports.Console)({ colorize: true })
+        new (winston.transports.Console)({
+            timestamp: timeStamp,
+            colorize: true
+        }),
+        new (winston.transports.File)({
+            filename: path.resolve(global.config.path, 'app.log'),
+            timestamp: timeStamp,
+            level: 'debug',
+            json: false
+        })
     ]
 });
 

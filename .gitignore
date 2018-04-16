@@ -3,3 +3,4 @@ servers/
 node_modules/
 steamcmd/
 *.exe
+app.log
