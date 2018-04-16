@@ -56,6 +56,10 @@ module.exports = class Game {
         //this.watchLog();
     }
 
+    async stop(){
+
+    }
+
     async watchLog() {
         let blah = spawn('tail', ['-f', 'process.log']);
         blah.stdout.on('data', this.onLog);

@@ -1,1 +1,1 @@
-pkg -t node9-win-x64 package.json
+webpack-cli && pkg -t node9-win-x64 package.json
