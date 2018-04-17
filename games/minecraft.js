@@ -145,14 +145,15 @@ const config = {
 
 module.exports = class MinecraftServer extends Game {
 
-    constructor(id) {
-        super(id, config);
+    constructor(id, settings) {
+        super(id, settings);
+        this.config = config;
     }
 
-    async install(config) {
-        await super.install(config);
-        if (config.version && versions[config.version]) {
-            await downloadFile(versions[config.version], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
+    async install() {
+        await super.install();
+        if (this.settings.version && versions[this.settings.version]) {
+            await downloadFile(versions[this.settings.version], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
         } else {
             await downloadFile(versions[Object.keys(versions)[0]], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
         }

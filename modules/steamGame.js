@@ -3,13 +3,13 @@ const Game = require('./game');
 
 module.exports = class SteamGame extends Game {
 
-    constructor(id, appID, config){
-        super(id, config);
+    constructor(id, appID, settings){
+        super(id, settings);
         this.appID = appID;
     }
 
-    async install(config){
-        await super.install(config);
+    async install(){
+        await super.install();
         await steamApi.install(this.appID, this.serverID, this.onUpdate);
     }
 

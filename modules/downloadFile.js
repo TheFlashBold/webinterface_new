@@ -11,11 +11,11 @@ async function download(url, dest) {
             response.pipe(file);
             file.on('finish', function() {
                 file.close();
-                logger.info(`Download ${url} to ${dest} done.`);
+                logger.info(`Download ${url} done.`);
                 return resolve();
             });
         }).on('error', function(err) {
-            logger.error(`Error downloading ${url} to ${dest}.`);
+            logger.error(`Error downloading ${url}.`);
             fs.unlink(dest);
             return reject(err);
         });

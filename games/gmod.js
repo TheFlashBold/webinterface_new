@@ -78,8 +78,9 @@ const config = {
 
 module.exports = class GmodServer extends steamGame {
 
-    constructor(id) {
-        super(id, appId, config);
+    constructor(id, settings) {
+        super(id, appId, settings);
+        this.config = config;
     }
 
     async start() {

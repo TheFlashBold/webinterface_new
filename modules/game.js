@@ -7,16 +7,17 @@ const fs = require('fs-extra');
 
 module.exports = class Game {
 
-    constructor(id, config) {
+    constructor(id, settings) {
         this.serverID = id;
-        this.config = config;
+        this.settings = settings;
+        this.config = {};
 
         //io.attachNamespace(app, 'server-' + id);
         //this.channel = app['server-' + id].socket;
         this.channel = app._io;
     }
 
-    async install(config) {
+    async install() {
         fs.mkdirsSync(path.resolve(global.config.server.path, this.serverID));
     }
 

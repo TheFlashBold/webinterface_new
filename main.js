@@ -4,25 +4,7 @@ const path = require('path');
 global.config = require(path.resolve(process.cwd(), 'config.json'));
 global.config.path = path.resolve('./');
 
-let timeStamp = () => '[' + (new Date()).toLocaleTimeString() + ']';
-const winston = require('winston');
-const logger = new (winston.Logger)({
-    transports: [
-        new (winston.transports.Console)({
-            timestamp: timeStamp,
-            colorize: true
-        }),
-        new (winston.transports.File)({
-            filename: path.resolve(global.config.path, 'app.log'),
-            timestamp: timeStamp,
-            level: 'debug',
-            json: false
-        })
-    ]
-});
-
-global.logger = logger;
-
+const logger = require('./modules/logger');
 const www = require('./modules/www');
 const steamApi = require('./modules/steamApi');
 const Games = require('./modules/games');
@@ -33,11 +15,11 @@ const Games = require('./modules/games');
     await steamApi.init();
     let games = Games(steamApi);
 
-    //let minecraftServer = new games.minecraft("mc");
-    //await minecraftServer.install({version: '1.12.2'});
+    //let minecraftServer = new games.minecraft("mc", {version: '1.8.9'});
+    //await minecraftServer.install();
     //await minecraftServer.start();
 
-    //let gmodServer = new games.gmod("test");
+    //let gmodServer = new games.gmod("test", {});
     //await gmodServer.install();
     //await gmodServer.start();
 })();
