@@ -40,11 +40,11 @@ module.exports = class Game {
         this.channel.emit('exit', exitCode);
     }
 
-    async start(cmd) {
+    async start(cmd, folders = []) {
         await this.generateConfig();
         let p = spawn(cmd.shift(), cmd, {
             //detached: true,
-            cwd: path.resolve(global.config.server.path, this.serverID),
+            cwd: path.resolve.apply(null, [global.config.server.path, this.serverID].concat(folders)),
             shell: true
         });
 
@@ -81,7 +81,7 @@ module.exports = class Game {
         }
     }
 
-    async getConfigKey(key){
+    getConfigKey(key){
         if(this.settings[key]){
             return this.settings[key];
         }

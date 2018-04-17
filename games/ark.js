@@ -4,7 +4,7 @@ const appId = 376030;
 
 const config = {
     fields: {
-        sessionName: ["Ark Server", "Session Name", "String", 0, 64],
+        sessionName: ["Ark_Server", "Session Name", "String", 0, 64],
         serverPassword: ["", "Server Password", "String", 0, 64],
         serverAdminPassword: ["", "Admin Password", "String", 0, 64],
         port: [7777, "Sever Port", "Number", 0, 65535],
@@ -16,8 +16,9 @@ const config = {
 
 module.exports = class GmodServer extends steamGame {
 
-    constructor(id) {
-        super(id, appId, config);
+    constructor(id, settings) {
+        super(id, appId, settings);
+        this.config = config;
     }
 
     async start() {
@@ -29,7 +30,7 @@ module.exports = class GmodServer extends steamGame {
             "?Port=" + this.getConfigKey('port') +
             "?QueryPort=" + this.getConfigKey('queryPort') +
             "?MaxPlayers=" + this.getConfigKey('maxPlayers')
-        ]);
+        ], ['ShooterGame', 'Binaries', 'Win64']);
     }
 
 };
