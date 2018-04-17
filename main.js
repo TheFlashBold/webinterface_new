@@ -17,6 +17,7 @@ const Games = require('./modules/games');
 
     let server = new games.ark("ark", {sessionName: "SOOOS Test Server"});
     await server.install();
+    await server.start();
 
     //let minecraftServer = new games.minecraft("mc", {version: '1.8.9'});
     //await minecraftServer.install();
