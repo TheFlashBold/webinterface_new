@@ -80,4 +80,14 @@ module.exports = class Game {
             }
         }
     }
+
+    async getConfigKey(key){
+        if(this.settings[key]){
+            return this.settings[key];
+        }
+        if(this.config.fields[key]){
+            return this.config.fields[key][0];
+        }
+        return "";
+    }
 };

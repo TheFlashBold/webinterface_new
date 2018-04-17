@@ -33,8 +33,10 @@ module.exports = {
                     }
                 }
             } else {
-                console.log(data);
+                //console.log(data);
             }
+            // exclude steamcmd update from progress!!!!
+            console.log(data);
         });
         runObj.outputStream.on('close', exitCode => {
             if(exitCode === 126){
