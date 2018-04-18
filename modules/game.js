@@ -5,6 +5,10 @@ const path = require('path');
 const serverUtility = require('./serverUtility');
 const fs = require('fs-extra');
 
+/**
+ * Base class for games
+ * @type {module.Game}
+ */
 module.exports = class Game {
 
     constructor(id, settings) {
@@ -17,14 +21,26 @@ module.exports = class Game {
         this.channel = app._io;
     }
 
+    /**
+     * Install gameserver
+     * @returns {Promise<void>}
+     */
     async install() {
         fs.mkdirsSync(path.resolve(global.config.server.path, this.serverID));
     }
 
+    /**
+     * Update gameserver
+     * @returns {Promise<void>}
+     */
     async update() {
 
     }
 
+    /**
+     * Remove gameserver
+     * @returns {Promise<void>}
+     */
     async remove() {
         fs.removeSync(path.resolve(global.config.server.path, this.serverID));
     }
@@ -40,6 +56,12 @@ module.exports = class Game {
         this.channel.emit('exit', exitCode);
     }
 
+    /***
+     * Starts gameserver
+     * @param cmd, cmd[0] = binary, cmd[1+] = args
+     * @param folders path to binary folder relative to server folder
+     * @returns {Promise<void>}
+     */
     async start(cmd, folders = []) {
         await this.generateConfig();
         let p = spawn(cmd.shift(), cmd, {
@@ -57,6 +79,10 @@ module.exports = class Game {
         //this.watchLog();
     }
 
+    /***
+     * Stops gameserver
+     * @returns {Promise<void>}
+     */
     async stop(){
 
     }
@@ -73,17 +99,30 @@ module.exports = class Game {
         this.channel.emit('log', data.toString());
     }
 
+    /**
+     * Builds all config files
+     * @returns {Promise<void>}
+     */
     async generateConfig() {
         if (this.config && this.config.files) {
             for (let [filename, config] of Object.entries(this.config.files)) {
-                fs.writeFileSync(path.resolve(global.config.server.path, this.serverID, filename), serverUtility.renderFile(config, {}), 'UTF-8');
+                let fileSettings = {};
+                if(this.settings.files && this.settings.files[filename]) {
+                    fileSettings = this.settings.files[filename];
+                }
+                fs.writeFileSync(path.resolve(global.config.server.path, this.serverID, filename), serverUtility.renderFile(config, fileSettings), 'UTF-8');
             }
         }
     }
 
+    /**
+     * Get key from config, else get default value
+     * @param key
+     * @returns {*}
+     */
     getConfigKey(key){
-        if(this.settings[key]){
-            return this.settings[key];
+        if(this.settings.fields[key]){
+            return this.settings.fields[key];
         }
         if(this.config.fields[key]){
             return this.config.fields[key][0];

@@ -15,17 +15,17 @@ const Games = require('./modules/games');
     await steamApi.init();
     let games = Games(steamApi);
 
-    //let server = new games.ark("ark", {sessionName: "SOOOS Test Server"});
+    //let server = new games.ark("ark", {fields:{sessionName: "SOOOS Test Server"}});
     //await server.install();
     //await server.start();
 
-    //let minecraftServer = new games.minecraft("mc", {version: '1.8.9'});
-    //await minecraftServer.install();
-    //await minecraftServer.start();
+    //let server = new games.minecraft("mc", {fields:{version: '1.8.9'}, files:{"server\.properties":{motd:"lululululu"}}});
+    //await server.install();
+    //await server.start();
 
-    //let gmodServer = new games.gmod("test", {});
-    //await gmodServer.install();
-    //await gmodServer.start();
+    //let server = new games.gmod("test", {fields:{}});
+    //await server.install();
+    //await server.start();
 })();
 
 process.on('unhandledRejection', (err) => {

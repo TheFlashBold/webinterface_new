@@ -1,7 +1,8 @@
-const Game = require('./../modules/game');
-const downloadFile = require('./../modules/downloadFile');
+const Game = require('./../../modules/game');
+const downloadFile = require('./../../modules/downloadFile');
 const path = require('path');
-const serverUtility = require('./../modules/serverUtility');
+const serverUtility = require('./../../modules/serverUtility');
+const fs = require('fs-extra');
 
 const versions = {
     '1.12.2': 'https://launcher.mojang.com/mc/game/1.12.2/server/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar',
@@ -85,60 +86,19 @@ const config = {
                 generatorSettings: ["", "Generator settings", "String", 0, 128],
                 resourcePackSha: ["", "Resouce pack sha1", "String", 0, 128]
             },
-            file: `
-            generator-settings=<%- generatorSettings %>
-            op-permission-level=<%- opPermissionLevel %>
-            allow-nether=<%- allowNether %>
-            level-name=<%- levelName %>
-            enable-query=<%- enableQuery %>
-            allow-flight=<%- allowFlight %>
-            prevent-proxy-connections=<%- preventProxyConnections %>
-            server-port=<%- serverPort %>
-            max-world-size=<%- maxWorldSize %>
-            level-type=<%- levelType %>
-            enable-rcon=<%- enableRcon %>
-            level-seed=<%- levelSeed %>
-            force-gamemode=<%- forceGamemode %>
-            server-ip=<%- serverIp %>
-            network-compression-threshold=<%- networkCompressionThreshold %>
-            max-build-height=<%- maxBuildHeight %>
-            spawn-npcs=<%- spawnNpcs %>
-            white-list=<%- whiteList %>
-            spawn-animals=<%- spawnAnimals %>
-            hardcore=<%- hardcore %>
-            snooper-enabled=<%- snooperEnabled %>
-            resource-pack-sha1=<%- resourcePackSha %>
-            online-mode=<%- onlineMode %>
-            resource-pack=<%- resourcePack %>
-            pvp=<%- pvp %>
-            difficulty=<%- difficulty %>
-            enable-command-block=<%- enableCommandBlock %>
-            gamemode=<%- gamemode %>
-            player-idle-timeout=<%- playerIdleTimeout %>
-            max-players=<%- maxPlayers %>
-            max-tick-time=<%- maxTickTime %>
-            spawn-monsters=<%- spawnMonsters %>
-            view-distance=<%- viewDistance %>
-            generate-structures=<%- generateStructures %>
-            motd=<%- motd %>
-            broadcast-console-to-ops=<%- broadcastConsoleToOps %>
-        `
+            file: fs.readFileSync(path.resolve(__dirname, 'config', 'server.properties.ejs'), 'UTF-8')
         },
         "eula\.txt": {
             fields: {
                 eula: [true, "Eula", "Boolean"]
             },
-            file: `
-            eula=<%- eula %>
-        `
+            file: fs.readFileSync(path.resolve(__dirname, 'config', 'eula.txt.ejs'), 'UTF-8')
         },
         "ops\.json": {
             fields: {
                 ops: [[], "Ops", "Array", {uuid: ["", "UUID", "String", 0, 64], name: ["", "Name", "String", 0, 64], level: [0, "Level", "Number", 0, 10]}]
             },
-            file: `
-            <%- JSON.stringify(ops, null, 4) %>
-        `
+            file: fs.readFileSync(path.resolve(__dirname, 'config', 'ops.json.ejs'), 'UTF-8')
         }
     }
 };

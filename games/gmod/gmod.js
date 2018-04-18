@@ -1,4 +1,5 @@
-const steamGame = require('./../modules/steamGame');
+const steamGame = require('./../../modules/steamGame');
+const fs = require('fs-extra');
 
 const sboxMax = 5000;
 const appId = 4020;
@@ -36,42 +37,7 @@ const config = {
                 sbox_noclip: [1, "Noclip", "Number", 0, 1],
                 net_maxfilesize: [60, "Max file size", "Number", 0, 1024]
             },
-            file: `
-            hostname                "<%- hostname %>"
-            rcon_password           "<%- rcon_password %>" 
-            sv_password             "<%- sv_password %>"
-            "sbox_maxprops"         "<%- sbox_maxprops %>"
-            "sbox_maxragdolls"      "<%- sbox_maxragdolls %>"
-            "sbox_maxballoons"      "<%- sbox_maxballoons %>"
-            "sbox_maxeffects"       "<%- sbox_maxeffects %>"
-            "sbox_maxdynamite"      "<%- sbox_maxdynamite %>"
-            "sbox_maxlamps"         "<%- sbox_maxlamps %>"
-            "sbox_maxthrusters"     "<%- sbox_maxthrusters %>"
-            "sbox_maxwheels"        "<%- sbox_maxwheels %>"
-            "sbox_maxnpcs"          "<%- sbox_maxnpcs %>"
-            "sbox_maxhoverballs"    "<%- sbox_maxhoverballs %>"
-            "sbox_maxvehicles"      "<%- sbox_maxvehicles %>"
-            "sbox_maxbuttons"       "<%- sbox_maxbuttons %>"
-            
-            "sbox_plpldamage"       "<%- sbox_plpldamage %>"
-            "sbox_godmode"          "<%- sbox_godmode %>"
-            "sbox_noclip"           "<%- sbox_noclip %>"
-            
-            "sv_noclipaccelerate"   "<%- sv_noclipaccelerate %>"
-            "sv_alltalk"            "<%- sv_alltalk %>"
-            
-            "sv_minrate"            "<%- sv_minrate %>"
-            "sv_maxrate"            "<%- sv_maxrate %>"
-            "decalfrequency"        "<%- decalfrequency %>" 
-            "sv_maxupdaterate"      "<%- sv_maxupdaterate %>"
-            "sv_minupdaterate"      "<%- sv_minupdaterate %>"
-            "net_maxfilesize"       "<%- net_maxfilesize %>"
-            
-            "sv_lan"                "<%- sv_lan %>"
-            "sv_region"             "<%- sv_region %>"           
-            
-            exec banned_user.cfg
-        `
+            file: fs.readFileSync(path.resolve(__dirname, 'config', 'server.cfg.ejs'), 'UTF-8')
         }
     }
 };

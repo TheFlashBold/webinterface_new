@@ -1,10 +1,10 @@
-const steamGame = require('./../modules/steamGame');
+const steamGame = require('./../../modules/steamGame');
 
 const appId = 376030;
 
 const config = {
     fields: {
-        sessionName: ["Ark_Server", "Session Name", "String", 0, 64],
+        sessionName: ["Ark Server", "Session Name", "String", 0, 64],
         serverPassword: ["", "Server Password", "String", 0, 64],
         serverAdminPassword: ["", "Admin Password", "String", 0, 64],
         port: [7777, "Sever Port", "Number", 0, 65535],
