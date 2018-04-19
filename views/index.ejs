@@ -170,13 +170,13 @@
                         </a>
                         <div class="collapse" id="server">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item" ng-repeat="server in user.servers"><a class="nav-link" ng-href="/server/{{server.id}}">{{server.name}}</a></li>
+                                <li class="nav-item" ng-repeat="(id, server) in user.servers"><a class="nav-link" ng-href="/server/{{id}}">{{server.name}}</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </nav>
-            <div class="content-wrapper">
+            <div class="content-wrapper" ng-if="user.servers">
                 <ng-view></ng-view>
             </div>
             <footer class="footer">

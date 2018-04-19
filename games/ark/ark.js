@@ -1,4 +1,7 @@
 const steamGame = require('./../../modules/steamGame');
+const os = require('os');
+const fs = require('fs');
+const path = require('path');
 
 const appId = 376030;
 
@@ -11,7 +14,15 @@ const config = {
         queryPort: [27015, "Query Port", "Number", 0, 65535],
         maxPlayers: [20, "Max Players", "Number", 1, 100]
     },
-    files: {}
+    files: {
+        "GameUserSettings\.ini":{
+            fields:{
+
+            },
+            file: fs.readFileSync(path.resolve(__dirname, 'config', 'GameUserConfig.ini.ejs'), 'UTF-8'),
+            fullpath: ['ShooterGame', 'Saved', 'Config', os.type() === 'Windows_NT'?'WindowsServer':'LinuxServer', 'GameUserSettings.ini']
+        }
+    }
 };
 
 module.exports = class GmodServer extends steamGame {

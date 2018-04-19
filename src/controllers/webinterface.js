@@ -1,9 +1,10 @@
 module.exports = [
     "$scope",
-    function($scope) {
+    "$rootScope",
+    function($scope, $rootScope) {
         $scope.state = 'login';
 
-        $scope.user = {
+        $rootScope.user = {
             email: "tycho.holzer@gmail.com",
             password: "lelele"
         };

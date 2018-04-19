@@ -110,7 +110,7 @@ module.exports = class Game {
                 if(this.settings.files && this.settings.files[filename]) {
                     fileSettings = this.settings.files[filename];
                 }
-                fs.writeFileSync(path.resolve(global.config.server.path, this.serverID, filename), serverUtility.renderFile(config, fileSettings), 'UTF-8');
+                fs.writeFileSync(path.resolve.apply(null, [global.config.server.path, this.serverID].concat(config.fullpath || [filename])), serverUtility.renderFile(config, fileSettings), 'UTF-8');
             }
         }
     }

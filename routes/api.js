@@ -9,8 +9,10 @@ module.exports = (router) => {
     router.get('/api/server/:serverId', (ctx, next) => {
         let id = ctx.params.serverId;
         let server = {};
-        if(id === "mc"){
+        if (id === "mc") {
             server = new global.games.minecraft("mc");
+        } else if (id === "kalasch") {
+            server = new global.games.ark("ark");
         } else {
             server = new global.games.gmod("test");
         }
@@ -23,20 +25,17 @@ module.exports = (router) => {
             email: ctx.request.body.email,
             token: "dgjdszsd68873gh3h8f",
             success: true,
-            servers: [
-                {
-                    name: "Minecraft",
-                    id: "mc"
+            servers: {
+                "mc": {
+                    name: "Minecraft"
                 },
-                {
-                    name: "Gmod TTT",
-                    id: "test"
+                "test": {
+                    name: "Gmod TTT"
                 },
-                {
-                    name: "Lel Server",
-                    id: "kalasch"
+                "kalasch": {
+                    name: "Ark"
                 }
-            ]
+            }
         };
     });
 

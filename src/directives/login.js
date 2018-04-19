@@ -2,7 +2,8 @@ module.exports = [
     "$document",
     "$http",
     "$timeout",
-    function ($document, $http, $timeout) {
+    "$rootScope",
+    function ($document, $http, $timeout, $rootScope) {
         return {
             restrict: 'AE',
             replace: true,
@@ -101,9 +102,10 @@ module.exports = [
                         if (data.data.success && data.data.success === true) {
                             let user = data.data;
                             delete user.success;
-                            scope.$applyAsync(() => {
-                                scope.user = user;
+                            $rootScope.$applyAsync(() => {
+                                $rootScope.user = user;
                             });
+                            //console.log(user);
                             window.changeState('loggedin');
                         }
                     }, (error) => {
