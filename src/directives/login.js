@@ -106,7 +106,7 @@ module.exports = [
                                 $rootScope.user = user;
                             });
                             //console.log(user);
-                            window.changeState('loggedin');
+                            $rootScope.changeState('loggedin');
                         }
                     }, (error) => {
                         console.log(error);

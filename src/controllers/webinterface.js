@@ -12,10 +12,10 @@ module.exports = [
         $scope.isAccessable = false;
 
         $scope.lock = () => {
-            changeState('locked');
+            $rootScope.changeState('locked');
         };
 
-        window.changeState = (state) => {
+        $rootScope.changeState = (state) => {
             $scope.$applyAsync(() => {
                 $scope.state = state;
                 //console.log(state);

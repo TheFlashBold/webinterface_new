@@ -2,7 +2,8 @@ module.exports = [
     "$document",
     "$http",
     "$timeout",
-    function ($document, $http, $timeout) {
+    "$rootScope",
+    function ($document, $http, $timeout, $rootScope) {
         return {
             restrict: 'AE',
             replace: true,
@@ -40,7 +41,7 @@ module.exports = [
                             scope.$applyAsync(() => {
                                 scope.user = user;
                             });
-                            changeState('loggedin');
+                            $rootScope.changeState('loggedin');
                         }
                     }, (error) => {
                         console.log(error);
