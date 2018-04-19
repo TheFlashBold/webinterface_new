@@ -120,7 +120,7 @@ module.exports = class MinecraftServer extends Game {
     }
 
     async start() {
-        await super.start(["java", "-server", "-d64", "-Xms" + serverUtility.getValue(this.config.fields.ram) +"G", "-Xmx" + serverUtility.getValue(this.config.fields.ram) +"G", "-jar server.jar", "nogui"]);
+        await super.start(["java", "-server", "-d64", "-Xms" + this.getConfigKey('ram') +"G", "-Xmx" + this.getConfigKey('ram') +"G", "-jar server.jar", "nogui"]);
     }
 
 };

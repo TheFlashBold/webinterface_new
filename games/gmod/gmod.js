@@ -5,6 +5,10 @@ const sboxMax = 5000;
 const appId = 4020;
 
 const config = {
+    fields: {
+        map: ["gm_construct", "Map", "String", 0, 64],
+        maxPlayers: [16, "Max Players", "Number", 1, 100]
+    },
     files: {
         "server\.cfg": {
             fields: {
@@ -50,7 +54,7 @@ module.exports = class GmodServer extends steamGame {
     }
 
     async start() {
-        await super.start(["srcds.exe", "-console", "-game \"garrysmod\"", "+exec \"server.cfg\" +gamemode sandbox +map gm_construct +maxplayers 16"]);
+        await super.start(["srcds.exe", "-console", "-game \"garrysmod\"", "+exec \"server.cfg\" +gamemode sandbox +map " + this.getConfigKey('map') + " +maxplayers " + this.getConfigKey('maxPlayers')]);
     }
 
 };
