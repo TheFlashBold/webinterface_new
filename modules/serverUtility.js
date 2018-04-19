@@ -1,12 +1,11 @@
 const ejs = require('ejs');
-const deepmerge = require('deepmerge');
 
 function renderFile(file, data) {
     return ejs.render(file.file, getConfig(file, data), {});
 }
 
 function getConfig(file, data) {
-    return deepmerge(getConfigValues(file.fields), data);
+    return Object.assign(getConfigValues(file.fields), data);
 }
 
 function getConfigValues(fields) {

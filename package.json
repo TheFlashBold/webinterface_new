@@ -7,11 +7,12 @@
     "scripts": [
       "modules/*.js",
       "routes/*.js",
-      "games/*.js"
+      "games/**/*.js"
     ],
     "assets": [
       "frontend/**/*",
-      "views/*"
+      "views/*",
+      "games/**/*.ejs"
     ]
   },
   "bin": {
@@ -25,7 +26,6 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "deepmerge": "^2.1.0",
     "ejs": "^2.5.8",
     "fs-extra": "^5.0.0",
     "koa": "^2.5.0",
@@ -37,7 +37,6 @@
     "mongoose": "^5.0.11",
     "path": "^0.12.7",
     "steamcmd-interface": "^1.1.0",
-    "url-loader": "^1.0.1",
     "winston": "^2.4.1"
   },
   "devDependencies": {
