@@ -1,9 +1,11 @@
-const spawn = require('child_process').spawn;
+const {spawn, exec} = require('child_process');
 const app = global.app;
 const io = global.io;
 const path = require('path');
 const serverUtility = require('./serverUtility');
 const fs = require('fs-extra');
+const mongoose = require('mongoose');
+const Promise = require('bluebird');
 
 /**
  * Base class for games
@@ -14,11 +16,35 @@ module.exports = class Game {
     constructor(id, settings) {
         this.serverID = id;
         this.settings = settings;
-        this.config = {};
+        this.config = {fields: {}, files: {}};
 
         //io.attachNamespace(app, 'server-' + id);
         //this.channel = app['server-' + id].socket;
-        this.channel = app._io;
+        this.channel = {
+            emit: (event, data) => {
+                io.emit(event, {id: this.serverID, data: data});
+            }
+        };
+
+        if (!global.servers) {
+            global.servers = {};
+        }
+
+        global.servers[id] = this;
+    }
+
+    async loadSettings() {
+        return new Promise((resolve, reject) => {
+            return mongoose.model('server').findOne({_id: this.serverID}).exec().then((server) => {
+                if (!server) {
+                    return console.log("No server found by id!");
+                }
+                this.model = server;
+                this.settings = JSON.parse(server.config);
+                //console.log(JSON.stringify(this.settings, null, 4));
+                return resolve();
+            });
+        });
     }
 
     /**
@@ -45,9 +71,9 @@ module.exports = class Game {
         fs.removeSync(path.resolve(global.config.server.path, this.serverID));
     }
 
-    async onUpdate(progress) {
-        console.log("process: " + progress);
-        this.channel.emit('progress', progress);
+    async onUpdate(state, progress) {
+        console.log(state + " progress: " + progress);
+        this.channel.emit('progress', {state: state, progress: progress});
     }
 
     async onExit(exitCode) {
@@ -70,6 +96,12 @@ module.exports = class Game {
             shell: true
         });
 
+        p.stdin.setEncoding('utf-8');
+        this.process = p;
+
+        this.model.set('pid', p.pid);
+        this.model.save();
+
         p.stdout.on('data', (data) => {
             this.onLog(data);
         });
@@ -83,8 +115,18 @@ module.exports = class Game {
      * Stops gameserver
      * @returns {Promise<void>}
      */
-    async stop(){
+    async stop() {
+        try {
+            this.sendInput("\x03");
+        } catch (e) {
+            console.log(e);
+        }
+    }
 
+    async sendInput(test) {
+        if (this.process) {
+            return this.process.stdin.write(test);
+        }
     }
 
     async watchLog() {
@@ -106,11 +148,11 @@ module.exports = class Game {
     async generateConfig() {
         if (this.config && this.config.files) {
             for (let [filename, config] of Object.entries(this.config.files)) {
-                let fileSettings = {};
-                if(this.settings.files && this.settings.files[filename]) {
+                let fileSettings = {fields: {}};
+                if (this.settings.files && this.settings.files[filename]) {
                     fileSettings = this.settings.files[filename];
                 }
-                fs.writeFileSync(path.resolve.apply(null, [global.config.server.path, this.serverID].concat(config.fullpath || [filename])), serverUtility.renderFile(config, fileSettings), 'UTF-8');
+                fs.writeFileSync(path.resolve.apply(null, [global.config.server.path, this.serverID].concat(config.fullpath || [filename])), serverUtility.renderFile(config, fileSettings.fields), 'UTF-8');
             }
         }
     }
@@ -120,13 +162,46 @@ module.exports = class Game {
      * @param key
      * @returns {*}
      */
-    getConfigKey(key){
-        if(this.settings.fields[key]){
+    getConfigKey(key) {
+        if (this.settings.fields[key]) {
             return this.settings.fields[key];
         }
-        if(this.config.fields[key]){
+        if (this.config.fields[key]) {
             return this.config.fields[key][0];
         }
         return "";
+    }
+
+    /***
+     * Returns server class with settings from db
+     * @param id
+     * @param owner
+     * @returns {Promise<void>}
+     */
+    static async getFromId(id, owner) {
+        return new Promise((resolve, reject) => {
+            if (!global.servers) {
+                global.servers = {};
+            }
+            if (global.servers[id]) {
+                return resolve(global.servers[id]);
+            }
+
+            let query = {_id: id};
+            if (owner) {
+                query.owners = owner;
+            }
+            return mongoose.model('server').findOne(query).lean().exec().then(async (server) => {
+                if (!server) {
+                    return reject(new Error("No server found by id / no permission."));
+                }
+                if (global.games[server.game]) {
+                    let s = new global.games[server.game](id);
+                    await s.loadSettings();
+                    return resolve(s);
+                }
+                return reject(new Error("Game not found."))
+            });
+        });
     }
 };

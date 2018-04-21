@@ -8,7 +8,9 @@ const appId = 4020;
 const config = {
     fields: {
         map: ["gm_construct", "Map", "String", 0, 64],
-        maxPlayers: [16, "Max Players", "Number", 1, 100]
+        maxPlayers: [16, "Max Players", "Number", 1, 100],
+        authkey: ["", "Steam API Key", "String", 0, 128],
+        workshop_collection: ["", "Workshop collection", "String", 0, 128]
     },
     files: {
         "server\.cfg": {
@@ -55,7 +57,17 @@ module.exports = class GmodServer extends steamGame {
     }
 
     async start() {
-        await super.start(["srcds.exe", "-console", "-game \"garrysmod\"", "+exec \"server.cfg\" +gamemode sandbox +map " + this.getConfigKey('map') + " +maxplayers " + this.getConfigKey('maxPlayers')]);
+        await super.start([
+            "srcds.exe",
+            "-console",
+            "-game \"garrysmod\"",
+            "-authkey " + this.getConfigKey('authkey'),
+            "+exec \"server.cfg\" " +
+            "+gamemode sandbox " +
+            "+map " + this.getConfigKey('map') + " " +
+            "+maxplayers " + this.getConfigKey('maxPlayers') + " " +
+            "+host_workshop_collection " + this.getConfigKey('workshop_collection')
+        ]);
     }
 
 };

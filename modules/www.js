@@ -15,18 +15,17 @@ module.exports = function () {
     const router = new koaRouter();
     const io = new koaIO();
 
-    fs.readdirSync(path.join(global.config.path, 'routes')).forEach(file => {
-        require(path.resolve(global.config.path, 'routes', file))(router);
-    });
-
     io.attach(app);
 
-    global.io = io;
+    global.io = app._io;
     global.app = app;
 
 
     app._io.on('connection', (socket) => {
         socket.join('server-mc');
+        socket.on('joinChannel', (channel) => {
+            socket.join(channel);
+        });
     });
 
     app.use(koaBody());
@@ -42,7 +41,12 @@ module.exports = function () {
         debug: false
     });
 
+    fs.readdirSync(path.join(global.config.path, 'routes')).forEach(file => {
+        require(path.resolve(global.config.path, 'routes', file))(router);
+    });
+
     app.listen(global.config.webserver.port);
     logger.info(`Starting webserver on port ${global.config.webserver.port}.`);
+
     return app;
 };

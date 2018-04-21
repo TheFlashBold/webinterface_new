@@ -15,6 +15,10 @@ if (global.config.steamcmd) {
 
 const steamcmd = new SteamCmd(config);
 
+function mapNumber(value, in_min, in_max, out_min, out_max) {
+    return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
 module.exports = {
     init: async () => {
         logger.info(`Loggin in steam ${config.username ? config.username : 'Anonymously'}.`);
@@ -26,18 +30,42 @@ module.exports = {
             steamcmd.setOptions({installDir: path.resolve(global.config.server.path, serverId)});
             let runObj = steamcmd.updateApp(appId);
             runObj.outputStream.on('data', data => {
+
+                // exclude steamcmd update from progress!!!!
+                console.log(data);
+
                 if (data.indexOf("Update state") !== -1) {
                     let percentData = data.toString().match(/(\d{1,2}\.\d{1,2})/);
                     if (percentData != null && percentData.length && percentData.length > 0) {
                         if (onUpdate && onUpdate instanceof Function) {
-                            onUpdate(parseFloat(percentData[1]));
+                            let state = "";
+                            let progress = parseFloat(percentData[1]);
+                            if(data.indexOf("reconfiguring") !== -1){
+                                state = "reconfiguring";
+                                progress = mapNumber(progress, 0, 100, 0, 1);
+                            } else if(data.indexOf("preallocating") !== -1){
+                                state = "preallocating";
+                                progress = mapNumber(progress, 0, 100, 1, 2);
+                            } else if(data.indexOf("downloading") !== -1){
+                                state = "downloading";
+                                progress = mapNumber(progress, 0, 100, 2, 90);
+                            } else if(data.indexOf("committing") !== -1){
+                                state = "committing";
+                                progress = mapNumber(progress, 0, 100, 90, 100);
+                            }
+                            onUpdate(state, progress.toFixed(2));
                         }
                     }
-                } else {
-                    //console.log(data);
+                } else if(data.indexOf("already up to date") !== -1) {
+                    if (onUpdate && onUpdate instanceof Function) {
+                        onUpdate("already up to date", 100);
+                    }
+                    return resolve();
+                } else if (data.indexOf("Success!") !== -1){
+                    if (onUpdate && onUpdate instanceof Function) {
+                        onUpdate("done", 100);
+                    }
                 }
-                // exclude steamcmd update from progress!!!!
-                console.log(data);
             });
             runObj.outputStream.on('close', exitCode => {
                 if (exitCode === 126) {

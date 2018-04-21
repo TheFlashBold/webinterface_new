@@ -5,6 +5,7 @@ global.config = require(path.resolve(process.cwd(), 'config.json'));
 global.config.path = path.resolve('./');
 
 const logger = require('./modules/logger');
+const db = require('./modules/db');
 const www = require('./modules/www');
 const steamApi = require('./modules/steamApi');
 const Games = require('./modules/games');
@@ -15,11 +16,12 @@ const Games = require('./modules/games');
     await steamApi.init();
     let games = Games(steamApi);
 
-    //let server = new games.ark("ark", {fields:{sessionName: "SOOOS Test Server"}});
+    //let server = await Game.getFromId("5adb362aea2b6479d685b108");
     //await server.install();
     //await server.start();
 
-    //let server = new games.minecraft("mc", {fields:{version: '1.8.9'}, files:{"server\.properties":{motd:"lululululu"}}});
+    //let server = new games.minecraft("5adb0229ea2b6479d685a582", {fields:{version: '1.8.9'}, files:{"server\.properties":{motd:"lululululu"}}});
+    //await server.loadSettings();
     //await server.install();
     //await server.start();
 

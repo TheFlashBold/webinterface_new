@@ -1,5 +1,6 @@
 import angular from 'angular';
 import ngRoute from 'angular-route';
+import ngCookies from 'angular-cookies';
 import io from 'socket.io-client';
 
 import * as jQuery from 'jquery';
@@ -9,7 +10,7 @@ window.io = io;
 
 const MODULE_NAME = 'webinterface';
 
-const app = angular.module(MODULE_NAME, ['ngRoute']);
+const app = angular.module(MODULE_NAME, ['ngRoute', 'ngCookies']);
 
 let controllerContext = require.context("./controllers", true, /^.*\.js$/);
 controllerContext.keys().forEach(function (controllerPath) {

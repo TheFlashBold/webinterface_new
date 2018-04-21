@@ -26,10 +26,10 @@ module.exports = [
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr ng-repeat="(id, server) in user.servers">
+                                    <tr ng-repeat="server in user.servers">
                                         <td>
-                                            <a ng-href="/server/{{id}}">
-                                                {{id}}
+                                            <a ng-href="/server/{{server._id}}">
+                                                {{server._id}}
                                             </a>
                                         </td>
                                         <td>

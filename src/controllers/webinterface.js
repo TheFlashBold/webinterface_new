@@ -22,10 +22,6 @@ module.exports = [
             });
         };
 
-        let socket = io();
-
-        socket.on('log', (data) => {
-            console.log(data);
-        });
+        $rootScope.socket = io();
     }
 ];

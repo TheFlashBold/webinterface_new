@@ -25,3 +25,7 @@
 .lock-screen {
 	background: unset !important;
 }
+
+pre.log {
+    max-height: 300px;
+}

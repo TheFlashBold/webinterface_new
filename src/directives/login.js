@@ -3,7 +3,8 @@ module.exports = [
     "$http",
     "$timeout",
     "$rootScope",
-    function ($document, $http, $timeout, $rootScope) {
+    "$cookies",
+    function ($document, $http, $timeout, $rootScope, $cookies) {
         return {
             restrict: 'AE',
             replace: true,
@@ -86,6 +87,23 @@ module.exports = [
             link: (scope, element, attrs) => {
                 scope.state = 'login';
 
+                let session = $cookies.getObject('session') || {};
+
+                if (session && session.session && session.email) {
+                    $http.post('/user', session).then((data) => {
+                        if (data.data.success && data.data.success === true) {
+                            let user = data.data.user;
+                            delete data.data.success;
+                            $rootScope.$applyAsync(() => {
+                                $rootScope.user = user;
+                            });
+                            $rootScope.changeState('loggedin');
+                        }
+                    }, (error) => {
+                        console.log(error);
+                    });
+                }
+
                 scope.showLogin = () => {
                     scope.state = 'login';
                 };
@@ -95,13 +113,14 @@ module.exports = [
                 };
 
                 scope.login = () => {
-                    if(!(scope.user && scope.user.email && scope.user.password)){
+                    if (!(scope.user && scope.user.email && scope.user.password)) {
                         return;
                     }
                     $http.post('/login', scope.user).then((data) => {
                         if (data.data.success && data.data.success === true) {
-                            let user = data.data;
-                            delete user.success;
+                            let user = data.data.user;
+                            delete data.data.success;
+                            $cookies.putObject('session', {session: user.session, email: user.email});
                             $rootScope.$applyAsync(() => {
                                 $rootScope.user = user;
                             });

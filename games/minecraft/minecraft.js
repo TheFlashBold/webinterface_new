@@ -112,15 +112,15 @@ module.exports = class MinecraftServer extends Game {
 
     async install() {
         await super.install();
-        if (this.settings.version && versions[this.settings.version]) {
-            await downloadFile(versions[this.settings.version], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
-        } else {
-            await downloadFile(versions[Object.keys(versions)[0]], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
-        }
+        await downloadFile(versions[this.getConfigKey('version')], path.resolve(global.config.server.path, this.serverID, 'server.jar'))
     }
 
     async start() {
-        await super.start(["java", "-server", "-d64", "-Xms" + this.getConfigKey('ram') +"G", "-Xmx" + this.getConfigKey('ram') +"G", "-jar server.jar", "nogui"]);
+        await super.start(["java", "-server", "-d64", "-Xms" + this.getConfigKey('ram') + "G", "-Xmx" + this.getConfigKey('ram') +"G", "-jar server.jar", "nogui"]);
+    }
+
+    async stop(){
+        await this.sendInput('/stop\n');
     }
 
 };
