@@ -3,7 +3,10 @@
         "port": 4000
     },
     "steamcmd": {
-        "path": "./steamcmd/"
+        "path": "./steamcmd/",
+        "username": "MW3_xp",
+        "password": "Tychoholzer1",
+        "code": "K2VWJ"
     },
     "server": {
         "path": "./servers/"

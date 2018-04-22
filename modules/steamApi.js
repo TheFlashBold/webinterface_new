@@ -9,6 +9,11 @@ if (global.config.steamcmd) {
         config.username = global.config.steamcmd.username;
         config.password = global.config.steamcmd.password;
     }
+
+    if(global.config.steamcmd.code){
+        config.steamGuardCode = global.config.steamcmd.code;
+    }
+
     config.binDir = path.resolve(global.config.steamcmd.path);
     config.installDir = path.resolve(global.config.server.path);
 }

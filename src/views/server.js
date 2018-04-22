@@ -85,7 +85,7 @@ module.exports = [
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Log</h4>
-                        <input type="text" class="form-control" placeholder="Command">
+                        <input type="text" class="form-control" placeholder="Command" ng-keyup="keyup($event)" ng-model="cmdInput">
                         <pre class="log">{{log}}</pre>
                     </div>
                 </div>

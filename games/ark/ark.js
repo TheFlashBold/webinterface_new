@@ -33,7 +33,7 @@ const config = {
     }
 };
 
-module.exports = class GmodServer extends steamGame {
+module.exports = class ArkServer extends steamGame {
 
     constructor(id, settings) {
         super(id, appId, settings);

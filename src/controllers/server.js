@@ -73,7 +73,7 @@ module.exports = [
             if (data.id === $scope.serverId) {
                 $scope.$applyAsync(() => {
                     $scope.log = data.data + $scope.log;
-                })
+                });
                 console.log(data.data);
             }
         });
@@ -92,5 +92,22 @@ module.exports = [
             $rootScope.socket.off('log');
             $rootScope.socket.off('progress');
         });
+
+        $scope.sendCommand = (cmd) => {
+            $http.post('/api/server/' + $scope.serverId + '/command', {cmd: cmd}).then((data) => {
+                if (data.data.success) {
+                    console.log('command sent!!!');
+                }
+            }, (err) => {
+                console.log(err);
+            });
+        };
+
+        $scope.keyup = (event) => {
+            if(event.key === "Enter"){
+                $scope.sendCommand($scope.cmdInput);
+                $scope.cmdInput = "";
+            }
+        };
     }
 ];

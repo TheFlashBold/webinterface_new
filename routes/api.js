@@ -11,6 +11,26 @@ module.exports = (router) => {
         ctx.body = "test";
     });
 
+    router.post('/api/server/:serverId/command', async (ctx, next) => {
+        let id = ctx.params.serverId;
+        let cmd = ctx.request.body.cmd + "\n";
+        /* Session ?
+        let owner = ;
+        */
+        try {
+            let s = await Game.getFromId(id);
+            s.sendInput(cmd);
+            ctx.body = {
+                success: true
+            };
+        } catch (e) {
+            return ctx.body = {
+                success: false,
+                error: "Server not found / no permission."
+            };
+        }
+    });
+
     router.get('/api/server/:serverId/install', async (ctx, next) => {
         let id = ctx.params.serverId;
         /* Session ?
@@ -21,7 +41,6 @@ module.exports = (router) => {
             ctx.body = {
                 success: true
             };
-            await s.loadSettings();
             await s.install();
         } catch (e) {
             return ctx.body = {
@@ -38,7 +57,6 @@ module.exports = (router) => {
         */
         try {
             let s = await Game.getFromId(id);
-            await s.loadSettings();
             await s.stop();
             return ctx.body = {
                 success: true
@@ -58,12 +76,12 @@ module.exports = (router) => {
         */
         try {
             let s = await Game.getFromId(id);
-            await s.loadSettings();
             await s.start();
             return ctx.body = {
                 success: true
             };
         } catch (e) {
+            console.log(e);
             return ctx.body = {
                 success: false,
                 error: "Server not found / no permission."
@@ -97,7 +115,6 @@ module.exports = (router) => {
         */
         try {
             let s = await Game.getFromId(id);
-            await s.loadSettings();
             return ctx.body = {
                 success: true,
                 server: {

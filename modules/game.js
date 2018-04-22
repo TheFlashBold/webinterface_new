@@ -1,4 +1,4 @@
-const {spawn, exec} = require('child_process');
+const {spawn, exec, execFile} = require('child_process');
 const app = global.app;
 const io = global.io;
 const path = require('path');
@@ -15,7 +15,7 @@ module.exports = class Game {
 
     constructor(id, settings) {
         this.serverID = id;
-        this.settings = settings;
+        this.settings = settings || {fields: {}, files: {}};
         this.config = {fields: {}, files: {}};
 
         //io.attachNamespace(app, 'server-' + id);
@@ -90,9 +90,11 @@ module.exports = class Game {
      */
     async start(cmd, folders = []) {
         await this.generateConfig();
+        let cwd = path.resolve.apply(null, [global.config.server.path, this.serverID].concat(folders));
+        console.log(cwd, cmd);
         let p = spawn(cmd.shift(), cmd, {
-            //detached: true,
-            cwd: path.resolve.apply(null, [global.config.server.path, this.serverID].concat(folders)),
+            detached: false,
+            cwd: cwd,
             shell: true
         });
 
@@ -117,7 +119,8 @@ module.exports = class Game {
      */
     async stop() {
         try {
-            this.sendInput("\x03");
+            this.process.kill();
+            //this.sendInput("\x03");
         } catch (e) {
             console.log(e);
         }
@@ -125,7 +128,11 @@ module.exports = class Game {
 
     async sendInput(test) {
         if (this.process) {
-            return this.process.stdin.write(test);
+            try {
+                return this.process.stdin.write(test);
+            } catch (e) {
+                console.log(e);
+            }
         }
     }
 
@@ -163,7 +170,7 @@ module.exports = class Game {
      * @returns {*}
      */
     getConfigKey(key) {
-        if (this.settings.fields[key]) {
+        if (this.settings && this.settings.fields && this.settings.fields[key]) {
             return this.settings.fields[key];
         }
         if (this.config.fields[key]) {
