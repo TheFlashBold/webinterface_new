@@ -58,7 +58,7 @@ module.exports = class GmodServer extends steamGame {
 
     async start() {
         await super.start([
-            "srcds.exe",
+            "./srcds_linux",
             "-console",
             "-game \"garrysmod\"",
             "-authkey " + this.getConfigKey('authkey'),

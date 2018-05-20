@@ -70,7 +70,7 @@ module.exports = class SevenDaysToDieServer extends steamGame {
 
     async start() {
         await super.start([
-            "7DaysToDieServer.exe",
+            "./startserver.sh",
             "-quit",
             "-batchmode",
             "-nographics",
